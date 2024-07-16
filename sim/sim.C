@@ -1,7 +1,6 @@
 
-void sim_digi(Int_t events_count = 50000) {
+void sim(Int_t events_count = 10000) {
 
-  Double_t CentTelzOffset = 0.;
 //----------------------------------
   Double_t BeamDetLToF = 1232.0;     // [cm] 12348
   Double_t BeamDetPosZToF = -95.3;  // [cm] 
@@ -12,15 +11,14 @@ void sim_digi(Int_t events_count = 50000) {
   // --------------- Target -------------------------------------------------
   Double_t targetD2Thickness = 0.6;  // [cm] this parameter should coincide with target H2 thickness in /macro/geo/create_target_D2_geo.C
   //---------------------Files-----------------------------------------------
-  TString outFile = "/home/ivan/work/data/exp2024/sim/sim_digi.root";
-  TString parFile = "/home/ivan/work/data/exp2024/sim/par.root";
+  TString outFile = "/home/ivan/work/data/exp2024/sim/sim_digiTest.root";
+  TString parFile = "/home/ivan/work/data/exp2024/sim/parTest.root";
   TString workDirPath = gSystem->Getenv("VMCWORKDIR");
-  TString paramFileQTelescope = "/home/ivan/work/macro/exp2024/sim/xml/QTelescopeParts.xml";
-  TString paramFileBeamDet = "/home/ivan/work/macro/exp2024/sim/xml/BeamDetParts.xml";
+  TString paramFileQTelescope = "/home/ivan/work/macro/exp2024/sim/xml/QTelescopeParts2.xml";
+  TString paramFileBeamDet = "/home/ivan/work/macro/exp2024/sim/xml//BeamDetParts2.xml";
   TString targetGeoFileName = "/home/ivan/work/macro/exp2024/sim/geo/target_exp1904.root";
   TString frameGeoFileName = "/home/ivan/work/macro/exp2024/sim/geo/housingFrames.root";  
   TString ndGeoFileName = "/home/ivan/work/macro/exp2024/sim/geo/ND.geo.exp1904.root";
-  
   // -----   Timer   --------------------------------------------------------
   TStopwatch timer; 
   timer.Start();
@@ -38,7 +36,7 @@ void sim_digi(Int_t events_count = 50000) {
   // -----   Runtime database   ---------------------------------------------
   FairRuntimeDb* rtdb = run->GetRuntimeDb();
   //-------- Set MC event header --------------------------------------------
-  ER2H_6LiEventHeader* decayMCheader = new ER2H_6LiEventHeader();
+  EREXP1811EventHeader* decayMCheader = new EREXP1811EventHeader();
   run->SetMCEventHeader(decayMCheader);
   // -----   Create media   -------------------------------------------------
   run->SetMaterials("media.geo");       // Materials
@@ -81,8 +79,6 @@ void sim_digi(Int_t events_count = 50000) {
   Double_t x, y, z;
   x = 4.85;
   y = 2.35;
-  //x = 4.625; //20 mcm
-  //y = 2.075;
   z = 17.3+1.5;
   TVector3 fZeroRotation(0., 0., 0.);
   TVector3 fMyRotation(0., 0., 0.);
@@ -197,40 +193,27 @@ void sim_digi(Int_t events_count = 50000) {
   TString ionName = "8He";
   ERIonMixGenerator* generator = new ERIonMixGenerator(ionName, Z, A, Q, 1);
   Double32_t kin_energy = kinE_MevPerNucleon * 1e-3 * A; //GeV
- generator->SetKinE(kin_energy);
-  // generator->SetKinESigma(0.2015, 0.00405);
-  // generator->SetKinESigma(0.205, 0.0605);
+  generator->SetKinE(kin_energy);
   generator->SetPSigmaOverP(0.017);
-  // generator->SetPSigmaOverP(0.);
-
-  // generator->SetThetaSigma(0., 0.);
   generator->SetThetaSigma(0.75, 0.4);
   generator->SetPhiRange(0, 360);
-  //generator->SetBoxXYZ(0, 0, 0., 0., beamStartPosition);
-  // generator->SetSigmaXYZ(0., 0., beamStartPosition, 0., 0.);
   generator->SetSigmaXYZ(0.033, -0.072, beamStartPosition, 0.5, 0.4);
   generator->SpreadingOnTarget(); 
 
   primGen->AddGenerator(generator);
   run->SetGenerator(primGen);
 
-/////////////////////////////////////////////////////////////////////////////
   // ------- Decayer --------------------------------------------------------
-  
-  Double_t massn4 = 4*0.939565;//7.5061760;  // [GeV]
+  Double_t massH7 = 4*0.939565 + 2.808920;//7.5061760;  // [GeV]
   ERDecayer* decayer = new ERDecayer();
-  ERDecay2H_6Li* targetDecay = new ERDecay2H_6Li();
+  ERDecayEXP1811* targetDecay = new ERDecayEXP1811();
   targetDecay->SetInteractionVolumeName("shapeD2");
   targetDecay->SetNuclearInteractionLength(63.);
-  //targetDecay->SetAngularDistribution("cos_tetta_cross.txt");
-  targetDecay->Set4nMass(massn4);
-  //targetDecay->SetDecayFile("pmom-pv-1_short.dat", 0.0005 /*excitation in file [GeV]*/);
-  targetDecay->Set4nExitation(0.00237, 0.00412, 1);
-  // targetDecay->Set4nExitation(0.0065, 0.00001, 0.7);
+  targetDecay->SetH7Mass(massH7);
+  targetDecay->SetH7Exitation(0.0022, 0.00001, 0.3);
+  targetDecay->SetH7Exitation(0.0065, 0.00001, 0.7);
   targetDecay->SetMinStep(1e-4);
   targetDecay->SetMaxPathLength(0.63/*2e-4 * 10 * 1.1*/);
-  // targetDecay->SetMaxPathLength(6./*2e-4 * 10 * 1.1*/);
-
   decayer->AddDecay(targetDecay);
   run->SetDecayer(decayer);
 
@@ -246,8 +229,6 @@ void sim_digi(Int_t events_count = 50000) {
 
   // -----  BeamDet Digitizer ----------------------------------------------
   ERBeamDetDigitizer* beamDetDigitizer = new ERBeamDetDigitizer(verbose);
-  // beamDetDigitizer->SetMWPCElossThreshold(0.000006);
-  // beamDetDigitizer->SetToFElossThreshold(0.000006);
   beamDetDigitizer->SetMWPCElossThreshold(0.);
   beamDetDigitizer->SetToFElossThreshold(0.);  
   beamDetDigitizer->SetToFElossSigmaOverEloss(0);
@@ -258,10 +239,6 @@ void sim_digi(Int_t events_count = 50000) {
   ndDigitizer->SetEdepError(0.0,0.04,0.02);
   ndDigitizer->SetLYError(0.0,0.04,0.02);
   ndDigitizer->SetTimeError(0.001);
-  // ndDigitizer->SetQuenchThreshold(0.005);
-  // ndDigitizer->SetLYThreshold(0.004);
-  // ndDigitizer->SetProbabilityB(0.1);
-  // ndDigitizer->SetProbabilityC(0.3);
   run->AddTask(ndDigitizer);
   //-------Set visualisation flag to true------------------------------------
   //run->SetStoreTraj(kTRUE);
@@ -277,13 +254,10 @@ void sim_digi(Int_t events_count = 50000) {
   rtdb->saveOutput();
   rtdb->print();
 
-  TString geometryName = "/home/ivan/work/data/exp2024/sim/setup.root";
+  TString geometryName = "/home/ivan/work/data/exp2024/sim/setupTest.root";
   run->CreateGeometryFile(geometryName.Data());
-
   // -----   Run simulation  ------------------------------------------------
-  // events_count = 1;
   run->Run(events_count);
-
   // -----   Finish   -------------------------------------------------------
   timer.Stop();
   Double_t rtime = timer.RealTime();

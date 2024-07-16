@@ -1,5 +1,5 @@
 
-void sim_digi(Int_t events_count = 50000) {
+void sim_digi1(Int_t events_count = 50000) {
 
   Double_t CentTelzOffset = 0.;
 //----------------------------------
@@ -12,8 +12,8 @@ void sim_digi(Int_t events_count = 50000) {
   // --------------- Target -------------------------------------------------
   Double_t targetD2Thickness = 0.6;  // [cm] this parameter should coincide with target H2 thickness in /macro/geo/create_target_D2_geo.C
   //---------------------Files-----------------------------------------------
-  TString outFile = "/home/ivan/work/data/exp2024/sim/sim_digi.root";
-  TString parFile = "/home/ivan/work/data/exp2024/sim/par.root";
+  TString outFile = "/home/ivan/work/data/exp2024/sim/sim_digi1.root";
+  TString parFile = "/home/ivan/work/data/exp2024/sim/par1.root";
   TString workDirPath = gSystem->Getenv("VMCWORKDIR");
   TString paramFileQTelescope = "/home/ivan/work/macro/exp2024/sim/xml/QTelescopeParts.xml";
   TString paramFileBeamDet = "/home/ivan/work/macro/exp2024/sim/xml/BeamDetParts.xml";
@@ -38,7 +38,7 @@ void sim_digi(Int_t events_count = 50000) {
   // -----   Runtime database   ---------------------------------------------
   FairRuntimeDb* rtdb = run->GetRuntimeDb();
   //-------- Set MC event header --------------------------------------------
-  ER2H_6LiEventHeader* decayMCheader = new ER2H_6LiEventHeader();
+  ER2H_3He3HEventHeader* decayMCheader = new ER2H_3He3HEventHeader();
   run->SetMCEventHeader(decayMCheader);
   // -----   Create media   -------------------------------------------------
   run->SetMaterials("media.geo");       // Materials
@@ -57,6 +57,7 @@ void sim_digi(Int_t events_count = 50000) {
   setupBeamDet->AddToF("ToF2", BeamDetPosZToF);    //  BeamDet parts should be added in ascending order   
   setupBeamDet->AddMWPC("MWPC1", BeamDetPosZ1MWPC);   //  of Z-coordinate of part.
   setupBeamDet->SetMWPCnumberingInvOrderX(); 
+
   setupBeamDet->AddMWPC("MWPC2", BeamDetPosZ2MWPC);    
   setupBeamDet->SetMWPCnumberingInvOrderX(); 
 
@@ -77,7 +78,7 @@ void sim_digi(Int_t events_count = 50000) {
   setupQTelescope->SetXMLParametersFile(paramFileQTelescope);
   setupQTelescope->SetGeoName("QTelescopeTmp");
 
-  // ----- 1 parameters ----------------------------------------------------
+ // ----- 1 parameters ----------------------------------------------------
   Double_t x, y, z;
   x = 4.85;
   y = 2.35;
@@ -177,7 +178,6 @@ void sim_digi(Int_t events_count = 50000) {
   assembly_4->AddComponent(veto4);
 
   setupQTelescope->AddSubAssembly(assembly_4);
-  
   // ------QTelescope -------------------------------------------------------
   ERTelescope* qtelescope= new ERTelescope("ERQTelescope", kTRUE,verbose);
   run->AddModule(qtelescope);
@@ -219,17 +219,14 @@ void sim_digi(Int_t events_count = 50000) {
   
   Double_t massn4 = 4*0.939565;//7.5061760;  // [GeV]
   ERDecayer* decayer = new ERDecayer();
-  ERDecay2H_6Li* targetDecay = new ERDecay2H_6Li();
+  ERDecay2H_3He3H* targetDecay = new ERDecay2H_3He3H();
   targetDecay->SetInteractionVolumeName("shapeD2");
   targetDecay->SetNuclearInteractionLength(63.);
-  //targetDecay->SetAngularDistribution("cos_tetta_cross.txt");
   targetDecay->Set4nMass(massn4);
-  //targetDecay->SetDecayFile("pmom-pv-1_short.dat", 0.0005 /*excitation in file [GeV]*/);
   targetDecay->Set4nExitation(0.00237, 0.00412, 1);
-  // targetDecay->Set4nExitation(0.0065, 0.00001, 0.7);
+  targetDecay->Set6LiExitation(0.017985, 0.003012, 1);
   targetDecay->SetMinStep(1e-4);
   targetDecay->SetMaxPathLength(0.63/*2e-4 * 10 * 1.1*/);
-  // targetDecay->SetMaxPathLength(6./*2e-4 * 10 * 1.1*/);
 
   decayer->AddDecay(targetDecay);
   run->SetDecayer(decayer);
@@ -266,6 +263,7 @@ void sim_digi(Int_t events_count = 50000) {
   //-------Set visualisation flag to true------------------------------------
   //run->SetStoreTraj(kTRUE);
   // -----   Initialize simulation run   ------------------------------------
+
   run->Init();
   Int_t nSteps = -15000;
 
@@ -277,7 +275,7 @@ void sim_digi(Int_t events_count = 50000) {
   rtdb->saveOutput();
   rtdb->print();
 
-  TString geometryName = "/home/ivan/work/data/exp2024/sim/setup.root";
+  TString geometryName = "/home/ivan/work/data/exp2024/sim/setup1.root";
   run->CreateGeometryFile(geometryName.Data());
 
   // -----   Run simulation  ------------------------------------------------
