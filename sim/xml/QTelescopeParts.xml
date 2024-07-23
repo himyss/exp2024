@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<QTelescopeParts>
+	<SiTypes>
+		<doubleSiTypes>
+			<doubleSi id="DoubleSi_DSD_CT2">
+				<doubleSiSize doubleSiX="6.8" doubleSiY="6.8" doubleSiZ="0.15"/>
+				<doubleSiSensAreaSize doubleSiSensX="6.4" doubleSiSensY="6.4" doubleSiSensZ="0.15"/>
+				<deadLayerThicknessFrontSide>0.000035</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.000035</deadLayerThicknessBackSide>
+				<stripCountX>32</stripCountX>
+				<stripCountY>32</stripCountY>
+				<doubleSiMedia>silicon</doubleSiMedia>
+			</doubleSi>	
+			<doubleSi id="DoubleSi_DSD1">
+				<doubleSiSize doubleSiX="6." doubleSiY="6." doubleSiZ="0.1"/>
+				<doubleSiSensAreaSize doubleSiSensX="6." doubleSiSensY="6." doubleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000187</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCountX>16</stripCountX>
+				<stripCountY>16</stripCountY>
+				<doubleSiMedia>silicon</doubleSiMedia>
+			</doubleSi>
+			<doubleSi id="DoubleSi_DSD2">
+				<doubleSiSize doubleSiX="6." doubleSiY="6." doubleSiZ="0.1"/>
+				<doubleSiSensAreaSize doubleSiSensX="6." doubleSiSensY="6." doubleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000187</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCountX>16</stripCountX>
+				<stripCountY>16</stripCountY>
+				<doubleSiMedia>silicon</doubleSiMedia>
+			</doubleSi>		
+			<doubleSi id="DoubleSi_DSD3">
+				<doubleSiSize doubleSiX="6." doubleSiY="6." doubleSiZ="0.1"/>
+				<doubleSiSensAreaSize doubleSiSensX="6." doubleSiSensY="6." doubleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000187</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCountX>16</stripCountX>
+				<stripCountY>16</stripCountY>
+				<doubleSiMedia>silicon</doubleSiMedia>
+			</doubleSi>		
+			<doubleSi id="DoubleSi_DSD4">
+				<doubleSiSize doubleSiX="6." doubleSiY="6." doubleSiZ="0.1"/>
+				<doubleSiSensAreaSize doubleSiSensX="6." doubleSiSensY="6." doubleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000187</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCountX>16</stripCountX>
+				<stripCountY>16</stripCountY>
+				<doubleSiMedia>silicon</doubleSiMedia>
+			</doubleSi>									
+			<doubleSi id="DoubleSi_DSD_CT1">
+				<doubleSiSize doubleSiX="6.8" doubleSiY="6.8" doubleSiZ="0.03"/>
+				<doubleSiSensAreaSize doubleSiSensX="6.4" doubleSiSensY="6.4" doubleSiSensZ="0.03"/>
+				<deadLayerThicknessFrontSide>0.000035</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.000035</deadLayerThicknessBackSide>
+				<stripCountX>32</stripCountX>
+				<stripCountY>32</stripCountY>
+				<doubleSiMedia>silicon</doubleSiMedia>
+			</doubleSi>			
+		</doubleSiTypes>
+		<singleSiTypes>
+			<singleSi id="SingleSi_SSD20_1">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.002"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.002"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD20_2">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.002"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.002"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>		
+			<singleSi id="SingleSi_SSD20_3">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.002"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.002"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>		
+			<singleSi id="SingleSi_SSD20_4">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.002"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.002"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>									
+			<singleSi id="SingleSi_SSD50_1">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.005"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.005"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD50_2">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.0065"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.0065"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD50_3">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.007"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.007"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD50_4">
+				<singleSiSize singleSiX="5" singleSiY="5" singleSiZ="0.014"/>
+				<singleSiSensAreaSize singleSiSensX="5" singleSiSensY="5" singleSiSensZ="0.014"/>
+				<deadLayerThicknessFrontSide>0.00005</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0000</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>	
+			<singleSi id="SingleSi_SSD">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.00015</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_1">
+				<singleSiSize singleSiX="6." singleSiY="6" singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000187</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_2">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000187</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_3">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000244</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_4">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.000219</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_veto">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.00015</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_V_1">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.00015</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_V_2">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.00015</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_V_3">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.00015</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>
+			<singleSi id="SingleSi_SSD_V_4">
+				<singleSiSize singleSiX="6." singleSiY="6." singleSiZ="0.1"/>
+				<singleSiSensAreaSize singleSiSensX="6." singleSiSensY="6." singleSiSensZ="0.1"/>
+				<deadLayerThicknessFrontSide>0.00015</deadLayerThicknessFrontSide>
+				<deadLayerThicknessBackSide>0.0003</deadLayerThicknessBackSide>
+				<stripCount>16</stripCount>
+				<singleSiMedia>silicon</singleSiMedia>
+			</singleSi>	
+		</singleSiTypes>
+	</SiTypes>
+	<CsITypes>
+		<CsI id="CsI_C">
+ 			<CsISize CsIX="1.65" CsIY="1.65" CsIZ="5"/>
+ 			<cubesCountX>4</cubesCountX>			
+ 			<cubesCountY>4</cubesCountY>
+ 			<splitSize>0.01</splitSize>
+ 			<deadLayer>0.002</deadLayer>
+			<CsIMedia>CsI</CsIMedia>
+		</CsI>
+		<CsI id="CsI">
+ 			<CsISize CsIX="1.65" CsIY="1.65" CsIZ="5"/>
+ 			<cubesCountX>4</cubesCountX>			
+ 			<cubesCountY>4</cubesCountY>
+ 			<splitSize>0.01</splitSize>
+ 			<deadLayer>0.002</deadLayer>
+			<CsIMedia>CsI</CsIMedia>
+		</CsI>
+	</CsITypes>
+</QTelescopeParts>
+
+

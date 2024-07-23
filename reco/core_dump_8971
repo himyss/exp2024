@@ -1,0 +1,21 @@
+#0  0x00007f814411d337 in __GI___waitpid (pid=8997, stat_loc=stat_loc
+entry=0x7ffe7c1372c8, options=options
+entry=0) at ../sysdeps/unix/sysv/linux/waitpid.c:30
+#1  0x00007f8144088047 in do_system (line=<optimized out>) at ../sysdeps/posix/system.c:149
+#2  0x00007f8144cbd58f in TUnixSystem::StackTrace() () from /home/muzalevskii/work/soft/FairSoftInst/lib/root/libCore.so.6.10
+#3  0x00007f81301f12f1 in FairLogger::LogFatalMessage (this=<optimized out>, strm=...) at /home/muzalevskii/work/soft/FairRoot/fairtools/FairLogger.cxx:576
+#4  0x00007f81301f1454 in FairLogger::endl (strm=...) at /home/muzalevskii/work/soft/FairRoot/fairtools/FairLogger.cxx:503
+#5  0x00007f81301ee716 in std::ostream::operator<< (__pf=0x7f81301f1400 <FairLogger::endl(std::ostream&)>, this=<optimized out>) at /usr/include/c++/7/ostream:113
+#6  FairLogger::operator<< (this=this
+entry=0x558db98b1b60, manip=0x7f81301f1400 <FairLogger::endl(std::ostream&)>) at /home/muzalevskii/work/soft/FairRoot/fairtools/FairLogger.cxx:470
+#7  0x00007f81298bc8a2 in ERTelescopeSetup::GetStationType (this=0x558dbda3d630, componentBranchName=...) at /home/muzalevskii/work/er/telescope/ERTelescopeSetup.cxx:128
+#8  0x00007f81298ca127 in ERTelescopeTrackFinder::Exec (this=0x558dbda99e30, opt=<optimized out>) at /home/muzalevskii/work/er/telescope/ERTelescopeTrackFinder.cxx:169
+#9  0x00007f8136b6a6a2 in FairTask::ExecuteTasks (this=0x558db7b1c050, option=0x7f8139467538 "") at /home/muzalevskii/work/soft/FairRoot/base/steer/FairTask.cxx:209
+#10 0x00007f8136b6ae82 in FairTask::ExecuteTask (this=0x558db7b1c050, option=0x7f8139467538 "") at /home/muzalevskii/work/soft/FairRoot/base/steer/FairTask.cxx:173
+#11 0x00007f8139459698 in ERRunAna::Run (this=0x558dbdd4d9d0, Ev_start=<optimized out>, Ev_end=50000) at /home/muzalevskii/work/er/base/ERRunAna.cxx:172
+#12 0x00007f8145433015 in ?? ()
+#13 0x00007ffe7c139b38 in ?? ()
+#14 0x00007f8144fae0f0 in vtable for TStopwatch () from /home/muzalevskii/work/soft/FairSoftInst/lib/root/libCore.so.6.10
+#15 0x0200000000000000 in ?? ()
+#16 0x41d9a78b892ad5fe in ?? ()
+#17 0x0000000000000000 in ?? ()

@@ -1,5 +1,5 @@
 
-void sim_digi(Int_t events_count = 50000) {
+void sim(Int_t events_count = 1) {
 
   Double_t CentTelzOffset = 0.;
 //----------------------------------
@@ -12,14 +12,14 @@ void sim_digi(Int_t events_count = 50000) {
   // --------------- Target -------------------------------------------------
   Double_t targetD2Thickness = 0.6;  // [cm] this parameter should coincide with target H2 thickness in /macro/geo/create_target_D2_geo.C
   //---------------------Files-----------------------------------------------
-  TString outFile = "/mnt/data/exp2024/sim/sim_digi.root";
-  TString parFile = "/mnt/data/exp2024/sim/par.root";
+  TString outFile = "/mnt/data/exp2024/sim/sim_digi1.root";
+  TString parFile = "/mnt/data/exp2024/sim/par1.root";
   TString workDirPath = gSystem->Getenv("VMCWORKDIR");
-  TString paramFileQTelescope = "/home/muzalevskii/work/macro/exp2024/sim/xml/QTelescopeParts.xml";
-  TString paramFileBeamDet = "/home/muzalevskii/work/macro/exp2024/sim/xml/BeamDetParts.xml";
-  TString targetGeoFileName = "/home/muzalevskii/work/macro/exp2024/sim/geo/target_exp1904.root";
-  TString frameGeoFileName = "/home/muzalevskii/work/macro/exp2024/sim/geo/housingFrames.root";  
-  TString ndGeoFileName = "/home/muzalevskii/work/macro/exp2024/sim/geo/ND.geo.exp1904.root";
+  TString paramFileQTelescope = "/home/muzalevskii/work/expertroot/macro/EXP1904_H7/QTelescopeParts3.xml";
+  TString paramFileBeamDet = "/home/muzalevskii/work/expertroot/macro/EXP1904_H7/BeamDetParts.xml";
+  TString targetGeoFileName = "/home/muzalevskii/work/expertroot/macro/EXP1904_H7/target_exp1904.root";
+  TString frameGeoFileName = "/home/muzalevskii/work/expertroot/macro/EXP1904_H7/housingFrames.root";  
+  TString ndGeoFileName = workDirPath + "/geometry/ND.geo.exp1904.root";
   
   // -----   Timer   --------------------------------------------------------
   TStopwatch timer; 
@@ -38,7 +38,7 @@ void sim_digi(Int_t events_count = 50000) {
   // -----   Runtime database   ---------------------------------------------
   FairRuntimeDb* rtdb = run->GetRuntimeDb();
   //-------- Set MC event header --------------------------------------------
-  ER2H_6LiEventHeader* decayMCheader = new ER2H_6LiEventHeader();
+  EREXP1811EventHeader* decayMCheader = new EREXP1811EventHeader();
   run->SetMCEventHeader(decayMCheader);
   // -----   Create media   -------------------------------------------------
   run->SetMaterials("media.geo");       // Materials
@@ -82,8 +82,6 @@ void sim_digi(Int_t events_count = 50000) {
   Double_t x, y, z;
   x = 4.85;
   y = 2.35;
-  //x = 4.625; //20 mcm
-  //y = 2.075;
   z = 17.3+1.5;
   TVector3 fZeroRotation(0., 0., 0.);
   TVector3 fMyRotation(0., 0., 0.);
@@ -91,14 +89,11 @@ void sim_digi(Int_t events_count = 50000) {
   ERGeoSubAssembly* assembly_1 = new ERGeoSubAssembly("Telescope_1", TVector3(-x, y, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_1",
                                                                                    TVector3(0.22, -0.27, -1.5), TVector3(), "X"); 
-  ERQTelescopeGeoComponentSingleSi* thin1_1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_1",
-                                                                                   TVector3(0.22, -0.27, -0.5), TVector3(), "Y");   
-  ERQTelescopeGeoComponentDoubleSi* thick1 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD1", 
-                                                                                  TVector3(0., 0., 1.), TVector3(), "X");
+  ERQTelescopeGeoComponentSingleSi* thick1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_1", 
+                                                                                  TVector3(0., 0., 0.), TVector3(), "Y");
   ERQTelescopeGeoComponentSingleSi* veto1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_1", 
-                                                                                  TVector3(0., 0., 2.0), TVector3(), "Y");
+                                                                                  TVector3(0., 0., 1.0), TVector3(), "Y");
   assembly_1->AddComponent(thin1);
-  assembly_1->AddComponent(thin1_1);  
   assembly_1->AddComponent(thick1);
   assembly_1->AddComponent(veto1);
 
@@ -108,15 +103,12 @@ void sim_digi(Int_t events_count = 50000) {
   ERGeoSubAssembly* assembly_2 = new ERGeoSubAssembly("Telescope_2", TVector3(-y, -x, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_2",
                                                                                    TVector3(0.27, 0.22, -1.5), TVector3(), "Y");
-  ERQTelescopeGeoComponentSingleSi* thin2_2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_2",
-                                                                                   TVector3(0.22, -0.27, -0.5), TVector3(), "X");    
-  ERQTelescopeGeoComponentDoubleSi* thick2 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD2", 
-                                                                                  TVector3(0., 0., 1.), TVector3(), "Y");
+  ERQTelescopeGeoComponentSingleSi* thick2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_2", 
+                                                                                  TVector3(0., 0., 0.), TVector3(), "X");
   ERQTelescopeGeoComponentSingleSi* veto2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_2", 
-                                                                                  TVector3(0., 0., 2.0), TVector3(), "X");
+                                                                                  TVector3(0., 0., 1.0), TVector3(), "X");
 
   assembly_2->AddComponent(thin2);
-  assembly_2->AddComponent(thin2_2);
   assembly_2->AddComponent(thick2);
   assembly_2->AddComponent(veto2);
 
@@ -131,13 +123,10 @@ void sim_digi(Int_t events_count = 50000) {
   zPos = radius * TMath::Cos(rotationC.Y() * TMath::DegToRad());
   ERGeoSubAssembly* assembly_Central= new ERGeoSubAssembly("Central_telescope", TVector3(xPos, yPos, zPos), rotationC);
   
-  ERQTelescopeGeoComponentDoubleSi* thin_Central = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD_CT1", 
-                                                                                  TVector3(0., 0., -5.), TVector3(), "Y");
-  ERQTelescopeGeoComponentDoubleSi* thick_Central = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD_CT2", 
+  ERQTelescopeGeoComponentDoubleSi* thick_Central = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD", 
                                                                                   TVector3(0., 0., -2.9), TVector3(), "X");
   ERQTelescopeGeoComponentCsI* csi = new ERQTelescopeGeoComponentCsI("CsI", "CsI", TVector3(0., 0., 0.), TVector3());
 
-  assembly_Central->AddComponent(thin_Central);
   assembly_Central->AddComponent(thick_Central);
   assembly_Central->AddComponent(csi);
 
@@ -147,15 +136,12 @@ void sim_digi(Int_t events_count = 50000) {
   ERGeoSubAssembly* assembly_3 = new ERGeoSubAssembly("Telescope_3", TVector3(x, -y, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_3",
                                                                                    TVector3(-0.22, 0.27, -1.5), TVector3(), "X"); 
-  ERQTelescopeGeoComponentSingleSi* thin3_3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_3",
-                                                                                   TVector3(-0.22, 0.27, -0.5), TVector3(), "Y");   
-  ERQTelescopeGeoComponentDoubleSi* thick3 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD3", 
-                                                                                  TVector3(0., 0., 1.), TVector3(), "X");
+  ERQTelescopeGeoComponentSingleSi* thick3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_3", 
+                                                                                  TVector3(0., 0., 0.), TVector3(), "Y");
   ERQTelescopeGeoComponentSingleSi* veto3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_3", 
-                                                                                  TVector3(0., 0., 2.0), TVector3(), "Y");
+                                                                                  TVector3(0., 0., 1.0), TVector3(), "Y");
 
   assembly_3->AddComponent(thin3);
-  assembly_3->AddComponent(thin3_3);  
   assembly_3->AddComponent(thick3);
   assembly_3->AddComponent(veto3);
 
@@ -165,15 +151,12 @@ void sim_digi(Int_t events_count = 50000) {
   ERGeoSubAssembly* assembly_4 = new ERGeoSubAssembly("Telescope_4", TVector3(y, x, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_4",
                                                                                    TVector3(-0.27, -0.22, -1.5), TVector3(), "Y"); 
-  ERQTelescopeGeoComponentSingleSi* thin4_4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_4",
-                                                                                   TVector3(-0.27, -0.22, -0.5), TVector3(), "X");   
-  ERQTelescopeGeoComponentDoubleSi* thick4 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD4", 
-                                                                                  TVector3(0., 0., 1.), TVector3(), "Y");
+  ERQTelescopeGeoComponentSingleSi* thick4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_4", 
+                                                                                  TVector3(0., 0., 0.), TVector3(), "X");
   ERQTelescopeGeoComponentSingleSi* veto4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_4", 
-                                                                                  TVector3(0., 0., 2.0), TVector3(), "X");
+                                                                                  TVector3(0., 0., 1.0), TVector3(), "X");
 
   assembly_4->AddComponent(thin4);
-  assembly_4->AddComponent(thin4_4);  
   assembly_4->AddComponent(thick4);
   assembly_4->AddComponent(veto4);
 
@@ -199,16 +182,9 @@ void sim_digi(Int_t events_count = 50000) {
   ERIonMixGenerator* generator = new ERIonMixGenerator(ionName, Z, A, Q, 1);
   Double32_t kin_energy = kinE_MevPerNucleon * 1e-3 * A; //GeV
  generator->SetKinE(kin_energy);
-  // generator->SetKinESigma(0.2015, 0.00405);
-  // generator->SetKinESigma(0.205, 0.0605);
   generator->SetPSigmaOverP(0.017);
-  // generator->SetPSigmaOverP(0.);
-
-  // generator->SetThetaSigma(0., 0.);
   generator->SetThetaSigma(0.75, 0.4);
   generator->SetPhiRange(0, 360);
-  //generator->SetBoxXYZ(0, 0, 0., 0., beamStartPosition);
-  // generator->SetSigmaXYZ(0., 0., beamStartPosition, 0., 0.);
   generator->SetSigmaXYZ(0.033, -0.072, beamStartPosition, 0.5, 0.4);
   generator->SpreadingOnTarget(); 
 
@@ -218,16 +194,16 @@ void sim_digi(Int_t events_count = 50000) {
 /////////////////////////////////////////////////////////////////////////////
   // ------- Decayer --------------------------------------------------------
   
-  Double_t massn4 = 4*0.939565;//7.5061760;  // [GeV]
+  Double_t massH7 = 4*0.939565 + 2.808920;//7.5061760;  // [GeV]
   ERDecayer* decayer = new ERDecayer();
-  ERDecay2H_6Li* targetDecay = new ERDecay2H_6Li();
+  ERDecayEXP1811* targetDecay = new ERDecayEXP1811();
   targetDecay->SetInteractionVolumeName("shapeD2");
   targetDecay->SetNuclearInteractionLength(63.);
   //targetDecay->SetAngularDistribution("cos_tetta_cross.txt");
-  targetDecay->Set4nMass(massn4);
+  targetDecay->SetH7Mass(massH7);
   //targetDecay->SetDecayFile("pmom-pv-1_short.dat", 0.0005 /*excitation in file [GeV]*/);
-  targetDecay->Set4nExitation(0.00237, 0.00412, 1);
-  // targetDecay->Set4nExitation(0.0065, 0.00001, 0.7);
+  targetDecay->SetH7Exitation(0.0022, 0.00001, 0.3);
+  targetDecay->SetH7Exitation(0.0065, 0.00001, 0.7);
   targetDecay->SetMinStep(1e-4);
   targetDecay->SetMaxPathLength(0.63/*2e-4 * 10 * 1.1*/);
   // targetDecay->SetMaxPathLength(6./*2e-4 * 10 * 1.1*/);
@@ -247,8 +223,6 @@ void sim_digi(Int_t events_count = 50000) {
 
   // -----  BeamDet Digitizer ----------------------------------------------
   ERBeamDetDigitizer* beamDetDigitizer = new ERBeamDetDigitizer(verbose);
-  // beamDetDigitizer->SetMWPCElossThreshold(0.000006);
-  // beamDetDigitizer->SetToFElossThreshold(0.000006);
   beamDetDigitizer->SetMWPCElossThreshold(0.);
   beamDetDigitizer->SetToFElossThreshold(0.);  
   beamDetDigitizer->SetToFElossSigmaOverEloss(0);
@@ -259,10 +233,6 @@ void sim_digi(Int_t events_count = 50000) {
   ndDigitizer->SetEdepError(0.0,0.04,0.02);
   ndDigitizer->SetLYError(0.0,0.04,0.02);
   ndDigitizer->SetTimeError(0.001);
-  // ndDigitizer->SetQuenchThreshold(0.005);
-  // ndDigitizer->SetLYThreshold(0.004);
-  // ndDigitizer->SetProbabilityB(0.1);
-  // ndDigitizer->SetProbabilityC(0.3);
   run->AddTask(ndDigitizer);
   //-------Set visualisation flag to true------------------------------------
   //run->SetStoreTraj(kTRUE);
@@ -278,11 +248,11 @@ void sim_digi(Int_t events_count = 50000) {
   rtdb->saveOutput();
   rtdb->print();
 
-  TString geometryName = "/mnt/data/exp2024/sim/setup.root";
+  TString geometryName = "/mnt/data/exp2024/sim/setup1.root";
   run->CreateGeometryFile(geometryName.Data());
 
   // -----   Run simulation  ------------------------------------------------
-  // events_count = 1;
+  events_count = 5000;
   run->Run(events_count);
 
   // -----   Finish   -------------------------------------------------------

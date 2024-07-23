@@ -1,0 +1,17 @@
+Info in <TGeoManager::TGeoManager>: Geometry FAIRGeom, FAIR geometry created
+Warning in <TGeoManager::Init>: Deleting previous geometry: FAIRGeom/FAIR geometry
+Info in <TGeoManager::CloseGeometry>: Geometry loaded from file...
+Info in <TGeoManager::SetTopVolume>: Top volume is cave. Master volume is cave
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CountLevels>: max level = 6, max placements = 45
+Info in <TGeoManager::CloseGeometry>: 3921 nodes/ 62 volume UID's in FAIR geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+Error in <FairRuntimeDb::initContainers()>: Error occured during initialization
+Error in <FairRuntimeDb::initContainers()>: Error occured during initialization
+Warning in <TGeoManager::CloseGeometry>: geometry already closed
+Info in <TObject::SetNavigator>: TG4RootNavigator created and registered to G4TransportationManager
+Info in <TObject::Initialize>: Creating G4 hierarchy ...
+Info in <TGeoManager::ConvertReflections>: Converting reflections in: FAIRGeom - FAIR geometry ...
+Info in <TGeoManager::ConvertReflections>: Done
+Info in <TObject::ConnectToG4>: ROOT detector construction class connected to G4RunManager

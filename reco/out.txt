@@ -1,0 +1,1481 @@
+
+Processing reco1.C...
+5000 will be processed
+[INFO   ] Opening Geometry input file: /mnt/data/exp2024/sim/setup1.root
+[WARNING] FairRunAna::SetInputFile is obsolete. Set it by FairFileSource
+[INFO   ] FairRootManager::OpenOutFile("/mnt/data/exp2024/reco/reco1.root")
+[INFO   ] FairGeoMedia: Read media 
+[DEBUG  ] FairMCApplication-ctor 0x560de73a1250
+[DEBUG  ] Call the initialiazer for the FairSource in FairRootManager 
+[DEBUG  ] FairFileSource::Init() chain created
+[DEBUG  ] Enteries in the list 62
+[DEBUG  ] Branch name MCTrack
+[DEBUG  ] Branch name TelescopePoint_Central_telescope_CsI
+[DEBUG  ] Branch name TelescopePoint_Central_telescope_DoubleSi_DSD_CT1_YX_X
+[DEBUG  ] Branch name TelescopePoint_Central_telescope_DoubleSi_DSD_CT1_YX_Y
+[DEBUG  ] Branch name TelescopePoint_Central_telescope_DoubleSi_DSD_CT2_XY_X
+[DEBUG  ] Branch name TelescopePoint_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_1_DoubleSi_DSD1_XY_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_1_DoubleSi_DSD1_XY_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_1_SingleSi_SSD20_1_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_1_SingleSi_SSD50_1_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_1_SingleSi_SSD_V_1_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_2_DoubleSi_DSD2_YX_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_2_DoubleSi_DSD2_YX_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_2_SingleSi_SSD20_2_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_2_SingleSi_SSD50_2_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_2_SingleSi_SSD_V_2_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_3_DoubleSi_DSD3_XY_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_3_DoubleSi_DSD3_XY_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_3_SingleSi_SSD20_3_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_3_SingleSi_SSD50_3_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_3_SingleSi_SSD_V_3_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_4_DoubleSi_DSD4_YX_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_4_DoubleSi_DSD4_YX_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_4_SingleSi_SSD20_4_Y
+[DEBUG  ] Branch name TelescopePoint_Telescope_4_SingleSi_SSD50_4_X
+[DEBUG  ] Branch name TelescopePoint_Telescope_4_SingleSi_SSD_V_4_X
+[DEBUG  ] Branch name BeamDetToFPoint
+[DEBUG  ] Branch name BeamDetMWPCPoint
+[DEBUG  ] Branch name NDPoint
+[DEBUG  ] Branch name TelescopeDigi_Central_telescope_CsI
+[DEBUG  ] Branch name TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_X
+[DEBUG  ] Branch name TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_Y
+[DEBUG  ] Branch name TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_X
+[DEBUG  ] Branch name TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_1_SingleSi_SSD20_1_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_1_SingleSi_SSD50_1_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_1_SingleSi_SSD_V_1_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_2_SingleSi_SSD20_2_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_2_SingleSi_SSD50_2_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_2_SingleSi_SSD_V_2_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_3_SingleSi_SSD20_3_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_3_SingleSi_SSD50_3_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_3_SingleSi_SSD_V_3_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_4_SingleSi_SSD20_4_Y
+[DEBUG  ] Branch name TelescopeDigi_Telescope_4_SingleSi_SSD50_4_X
+[DEBUG  ] Branch name TelescopeDigi_Telescope_4_SingleSi_SSD_V_4_X
+[DEBUG  ] Branch name BeamDetToFDigi1
+[DEBUG  ] Branch name BeamDetToFDigi2
+[DEBUG  ] Branch name BeamDetMWPCDigiX1
+[DEBUG  ] Branch name BeamDetMWPCDigiX2
+[DEBUG  ] Branch name BeamDetMWPCDigiY1
+[DEBUG  ] Branch name BeamDetMWPCDigiY2
+[DEBUG  ] Branch name NDDigi
+[DEBUG  ] Branch name MCEventHeader.
+[DEBUG  ] Entries in this Source 5000
+[INFO   ] The input consists out of the following trees and files: 
+[INFO   ]  - er
+[INFO   ]     - /mnt/data/exp2024/sim/sim_digi1.root
+[DEBUG  ] Source is intialized and the list of branches is created in FairRootManager 
+[INFO   ] Parameter and input file are available, Assure that basic info is there for the run!
+[DEBUG  ] -- Get Event Time --
+[DEBUG  ] Get event time from MCEventHeader : 0 ns
+[DEBUG  ] --Event number --- 0 with time ---- 0
+Event number 0
+
+************************************************************* 
+     initialisation for run id 1720699070
+************************************************************* 
+-I- FairRunTimeDB::InitContainer() FairBaseParSet
+[ERROR  ] init() FairBaseParSet  not initialized 
+
+************************************************************* 
+     initialisation for run id 1720699070
+************************************************************* 
+-I- FairRunTimeDB::InitContainer() FairBaseParSet
+[ERROR  ] init() FairBaseParSet  not initialized 
+[DEBUG  ] Try to find an object BeamDetMWPCDigiX1 describing the branch in the folder structure in file
+[INFO   ] Object BeamDetMWPCDigiX1 describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object BeamDetMWPCDigiX2 describing the branch in the folder structure in file
+[INFO   ] Object BeamDetMWPCDigiX2 describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object BeamDetMWPCDigiY1 describing the branch in the folder structure in file
+[INFO   ] Object BeamDetMWPCDigiY1 describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object BeamDetMWPCDigiY2 describing the branch in the folder structure in file
+[INFO   ] Object BeamDetMWPCDigiY2 describing the branch in the folder structure was found
+[DEBUG  ] ERBeamDetSetup initialized! 
+[DEBUG  ] WireX 0 position (1.8475, 0, -81.6) cm
+[DEBUG  ] WireX 1 position (1.7225, 0, -81.6) cm
+[DEBUG  ] WireX 2 position (1.5975, 0, -81.6) cm
+[DEBUG  ] WireX 3 position (1.4725, 0, -81.6) cm
+[DEBUG  ] WireX 4 position (1.3475, 0, -81.6) cm
+[DEBUG  ] WireX 5 position (1.2225, 0, -81.6) cm
+[DEBUG  ] WireX 6 position (1.0975, 0, -81.6) cm
+[DEBUG  ] WireX 7 position (0.9725, 0, -81.6) cm
+[DEBUG  ] WireX 8 position (0.8475, 0, -81.6) cm
+[DEBUG  ] WireX 9 position (0.7225, 0, -81.6) cm
+[DEBUG  ] WireX 10 position (0.5975, 0, -81.6) cm
+[DEBUG  ] WireX 11 position (0.4725, 0, -81.6) cm
+[DEBUG  ] WireX 12 position (0.3475, 0, -81.6) cm
+[DEBUG  ] WireX 13 position (0.2225, 0, -81.6) cm
+[DEBUG  ] WireX 14 position (0.0975, 0, -81.6) cm
+[DEBUG  ] WireX 15 position (-0.0275, 0, -81.6) cm
+[DEBUG  ] WireX 16 position (-0.1525, 0, -81.6) cm
+[DEBUG  ] WireX 17 position (-0.2775, 0, -81.6) cm
+[DEBUG  ] WireX 18 position (-0.4025, 0, -81.6) cm
+[DEBUG  ] WireX 19 position (-0.5275, 0, -81.6) cm
+[DEBUG  ] WireX 20 position (-0.6525, 0, -81.6) cm
+[DEBUG  ] WireX 21 position (-0.7775, 0, -81.6) cm
+[DEBUG  ] WireX 22 position (-0.9025, 0, -81.6) cm
+[DEBUG  ] WireX 23 position (-1.0275, 0, -81.6) cm
+[DEBUG  ] WireX 24 position (-1.1525, 0, -81.6) cm
+[DEBUG  ] WireX 25 position (-1.2775, 0, -81.6) cm
+[DEBUG  ] WireX 26 position (-1.4025, 0, -81.6) cm
+[DEBUG  ] WireX 27 position (-1.5275, 0, -81.6) cm
+[DEBUG  ] WireX 28 position (-1.6525, 0, -81.6) cm
+[DEBUG  ] WireX 29 position (-1.7775, 0, -81.6) cm
+[DEBUG  ] WireX 30 position (-1.9025, 0, -81.6) cm
+[DEBUG  ] WireX 31 position (-2.0275, 0, -81.6) cm
+[DEBUG  ] WireY 0 position (-3.55913e-16, -2.2375, -80.4) cm
+[DEBUG  ] WireY 1 position (-3.32951e-16, -2.1125, -80.4) cm
+[DEBUG  ] WireY 2 position (-3.09989e-16, -1.9875, -80.4) cm
+[DEBUG  ] WireY 3 position (-2.87027e-16, -1.8625, -80.4) cm
+[DEBUG  ] WireY 4 position (-2.64064e-16, -1.7375, -80.4) cm
+[DEBUG  ] WireY 5 position (-2.41102e-16, -1.6125, -80.4) cm
+[DEBUG  ] WireY 6 position (-2.1814e-16, -1.4875, -80.4) cm
+[DEBUG  ] WireY 7 position (-1.95178e-16, -1.3625, -80.4) cm
+[DEBUG  ] WireY 8 position (-1.72216e-16, -1.2375, -80.4) cm
+[DEBUG  ] WireY 9 position (-1.49254e-16, -1.1125, -80.4) cm
+[DEBUG  ] WireY 10 position (-1.26292e-16, -0.9875, -80.4) cm
+[DEBUG  ] WireY 11 position (-1.0333e-16, -0.8625, -80.4) cm
+[DEBUG  ] WireY 12 position (-8.03674e-17, -0.7375, -80.4) cm
+[DEBUG  ] WireY 13 position (-5.74053e-17, -0.6125, -80.4) cm
+[DEBUG  ] WireY 14 position (-3.44432e-17, -0.4875, -80.4) cm
+[DEBUG  ] WireY 15 position (-1.14811e-17, -0.3625, -80.4) cm
+[DEBUG  ] WireY 16 position (1.14811e-17, -0.2375, -80.4) cm
+[DEBUG  ] WireY 17 position (3.44432e-17, -0.1125, -80.4) cm
+[DEBUG  ] WireY 18 position (5.74053e-17, 0.0125, -80.4) cm
+[DEBUG  ] WireY 19 position (8.03674e-17, 0.1375, -80.4) cm
+[DEBUG  ] WireY 20 position (1.0333e-16, 0.2625, -80.4) cm
+[DEBUG  ] WireY 21 position (1.26292e-16, 0.3875, -80.4) cm
+[DEBUG  ] WireY 22 position (1.49254e-16, 0.5125, -80.4) cm
+[DEBUG  ] WireY 23 position (1.72216e-16, 0.6375, -80.4) cm
+[DEBUG  ] WireY 24 position (1.95178e-16, 0.7625, -80.4) cm
+[DEBUG  ] WireY 25 position (2.1814e-16, 0.8875, -80.4) cm
+[DEBUG  ] WireY 26 position (2.41102e-16, 1.0125, -80.4) cm
+[DEBUG  ] WireY 27 position (2.64064e-16, 1.1375, -80.4) cm
+[DEBUG  ] WireY 28 position (2.87027e-16, 1.2625, -80.4) cm
+[DEBUG  ] WireY 29 position (3.09989e-16, 1.3875, -80.4) cm
+[DEBUG  ] WireY 30 position (3.32951e-16, 1.5125, -80.4) cm
+[DEBUG  ] WireY 31 position (3.55913e-16, 1.6375, -80.4) cm
+[DEBUG  ] WireX 0 position (1.9675, 0, -28.1) cm
+[DEBUG  ] WireX 1 position (1.8425, 0, -28.1) cm
+[DEBUG  ] WireX 2 position (1.7175, 0, -28.1) cm
+[DEBUG  ] WireX 3 position (1.5925, 0, -28.1) cm
+[DEBUG  ] WireX 4 position (1.4675, 0, -28.1) cm
+[DEBUG  ] WireX 5 position (1.3425, 0, -28.1) cm
+[DEBUG  ] WireX 6 position (1.2175, 0, -28.1) cm
+[DEBUG  ] WireX 7 position (1.0925, 0, -28.1) cm
+[DEBUG  ] WireX 8 position (0.9675, 0, -28.1) cm
+[DEBUG  ] WireX 9 position (0.8425, 0, -28.1) cm
+[DEBUG  ] WireX 10 position (0.7175, 0, -28.1) cm
+[DEBUG  ] WireX 11 position (0.5925, 0, -28.1) cm
+[DEBUG  ] WireX 12 position (0.4675, 0, -28.1) cm
+[DEBUG  ] WireX 13 position (0.3425, 0, -28.1) cm
+[DEBUG  ] WireX 14 position (0.2175, 0, -28.1) cm
+[DEBUG  ] WireX 15 position (0.0925, 0, -28.1) cm
+[DEBUG  ] WireX 16 position (-0.0325, 0, -28.1) cm
+[DEBUG  ] WireX 17 position (-0.1575, 0, -28.1) cm
+[DEBUG  ] WireX 18 position (-0.2825, 0, -28.1) cm
+[DEBUG  ] WireX 19 position (-0.4075, 0, -28.1) cm
+[DEBUG  ] WireX 20 position (-0.5325, 0, -28.1) cm
+[DEBUG  ] WireX 21 position (-0.6575, 0, -28.1) cm
+[DEBUG  ] WireX 22 position (-0.7825, 0, -28.1) cm
+[DEBUG  ] WireX 23 position (-0.9075, 0, -28.1) cm
+[DEBUG  ] WireX 24 position (-1.0325, 0, -28.1) cm
+[DEBUG  ] WireX 25 position (-1.1575, 0, -28.1) cm
+[DEBUG  ] WireX 26 position (-1.2825, 0, -28.1) cm
+[DEBUG  ] WireX 27 position (-1.4075, 0, -28.1) cm
+[DEBUG  ] WireX 28 position (-1.5325, 0, -28.1) cm
+[DEBUG  ] WireX 29 position (-1.6575, 0, -28.1) cm
+[DEBUG  ] WireX 30 position (-1.7825, 0, -28.1) cm
+[DEBUG  ] WireX 31 position (-1.9075, 0, -28.1) cm
+[DEBUG  ] WireY 0 position (-3.55913e-16, -2.0925, -26.9) cm
+[DEBUG  ] WireY 1 position (-3.32951e-16, -1.9675, -26.9) cm
+[DEBUG  ] WireY 2 position (-3.09989e-16, -1.8425, -26.9) cm
+[DEBUG  ] WireY 3 position (-2.87027e-16, -1.7175, -26.9) cm
+[DEBUG  ] WireY 4 position (-2.64064e-16, -1.5925, -26.9) cm
+[DEBUG  ] WireY 5 position (-2.41102e-16, -1.4675, -26.9) cm
+[DEBUG  ] WireY 6 position (-2.1814e-16, -1.3425, -26.9) cm
+[DEBUG  ] WireY 7 position (-1.95178e-16, -1.2175, -26.9) cm
+[DEBUG  ] WireY 8 position (-1.72216e-16, -1.0925, -26.9) cm
+[DEBUG  ] WireY 9 position (-1.49254e-16, -0.9675, -26.9) cm
+[DEBUG  ] WireY 10 position (-1.26292e-16, -0.8425, -26.9) cm
+[DEBUG  ] WireY 11 position (-1.0333e-16, -0.7175, -26.9) cm
+[DEBUG  ] WireY 12 position (-8.03674e-17, -0.5925, -26.9) cm
+[DEBUG  ] WireY 13 position (-5.74053e-17, -0.4675, -26.9) cm
+[DEBUG  ] WireY 14 position (-3.44432e-17, -0.3425, -26.9) cm
+[DEBUG  ] WireY 15 position (-1.14811e-17, -0.2175, -26.9) cm
+[DEBUG  ] WireY 16 position (1.14811e-17, -0.0925, -26.9) cm
+[DEBUG  ] WireY 17 position (3.44432e-17, 0.0325, -26.9) cm
+[DEBUG  ] WireY 18 position (5.74053e-17, 0.1575, -26.9) cm
+[DEBUG  ] WireY 19 position (8.03674e-17, 0.2825, -26.9) cm
+[DEBUG  ] WireY 20 position (1.0333e-16, 0.4075, -26.9) cm
+[DEBUG  ] WireY 21 position (1.26292e-16, 0.5325, -26.9) cm
+[DEBUG  ] WireY 22 position (1.49254e-16, 0.6575, -26.9) cm
+[DEBUG  ] WireY 23 position (1.72216e-16, 0.7825, -26.9) cm
+[DEBUG  ] WireY 24 position (1.95178e-16, 0.9075, -26.9) cm
+[DEBUG  ] WireY 25 position (2.1814e-16, 1.0325, -26.9) cm
+[DEBUG  ] WireY 26 position (2.41102e-16, 1.1575, -26.9) cm
+[DEBUG  ] WireY 27 position (2.64064e-16, 1.2825, -26.9) cm
+[DEBUG  ] WireY 28 position (2.87027e-16, 1.4075, -26.9) cm
+[DEBUG  ] WireY 29 position (3.09989e-16, 1.5325, -26.9) cm
+[DEBUG  ] WireY 30 position (3.32951e-16, 1.6575, -26.9) cm
+[DEBUG  ] WireY 31 position (3.55913e-16, 1.7825, -26.9) cm
+[DEBUG  ] The distance between MWPC stations: 53.5 cm;
+[DEBUG  ] The distance between plastics: 1232 cm;
+[DEBUG  ] ERBeamDetSetup: read parameters from parContainer! 
+[DEBUG  ] Try to find an object TelescopeDigi_Central_telescope_CsI describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Central_telescope_CsI describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_1_SingleSi_SSD20_1_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_1_SingleSi_SSD20_1_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_1_SingleSi_SSD50_1_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_1_SingleSi_SSD50_1_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_1_SingleSi_SSD_V_1_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_1_SingleSi_SSD_V_1_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_2_SingleSi_SSD20_2_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_2_SingleSi_SSD20_2_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_2_SingleSi_SSD50_2_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_2_SingleSi_SSD50_2_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_2_SingleSi_SSD_V_2_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_2_SingleSi_SSD_V_2_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_3_SingleSi_SSD20_3_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_3_SingleSi_SSD20_3_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_3_SingleSi_SSD50_3_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_3_SingleSi_SSD50_3_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_3_SingleSi_SSD_V_3_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_3_SingleSi_SSD_V_3_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_4_SingleSi_SSD20_4_Y describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_4_SingleSi_SSD20_4_Y describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_4_SingleSi_SSD50_4_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_4_SingleSi_SSD50_4_X describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object TelescopeDigi_Telescope_4_SingleSi_SSD_V_4_X describing the branch in the folder structure in file
+[INFO   ] Object TelescopeDigi_Telescope_4_SingleSi_SSD_V_4_X describing the branch in the folder structure was found
+[DEBUG  ] Loading Telescope setup from parameters database file.
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 0 global coordinates: 3.1, 0, 30.2 | local coordinates: 5.53354e-322, -nan, 4.94066e-324
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 0 global coordinates: 3.1, 3.1, 30.2 | local coordinates: 0, 3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 1 global coordinates: 3.1, 2.9, 30.2 | local coordinates: 0, 2.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 2 global coordinates: 3.1, 2.7, 30.2 | local coordinates: 0, 2.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 3 global coordinates: 3.1, 2.5, 30.2 | local coordinates: 0, 2.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 4 global coordinates: 3.1, 2.3, 30.2 | local coordinates: 0, 2.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 5 global coordinates: 3.1, 2.1, 30.2 | local coordinates: 0, 2.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 6 global coordinates: 3.1, 1.9, 30.2 | local coordinates: 0, 1.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 7 global coordinates: 3.1, 1.7, 30.2 | local coordinates: 0, 1.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 8 global coordinates: 3.1, 1.5, 30.2 | local coordinates: 0, 1.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 9 global coordinates: 3.1, 1.3, 30.2 | local coordinates: 0, 1.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 10 global coordinates: 3.1, 1.1, 30.2 | local coordinates: 0, 1.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 11 global coordinates: 3.1, 0.9, 30.2 | local coordinates: 0, 0.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 12 global coordinates: 3.1, 0.7, 30.2 | local coordinates: 0, 0.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 13 global coordinates: 3.1, 0.5, 30.2 | local coordinates: 0, 0.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 14 global coordinates: 3.1, 0.3, 30.2 | local coordinates: 0, 0.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 15 global coordinates: 3.1, 0.1, 30.2 | local coordinates: 0, 0.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 16 global coordinates: 3.1, -0.1, 30.2 | local coordinates: 0, -0.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 17 global coordinates: 3.1, -0.3, 30.2 | local coordinates: 0, -0.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 18 global coordinates: 3.1, -0.5, 30.2 | local coordinates: 0, -0.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 19 global coordinates: 3.1, -0.7, 30.2 | local coordinates: 0, -0.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 20 global coordinates: 3.1, -0.9, 30.2 | local coordinates: 0, -0.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 21 global coordinates: 3.1, -1.1, 30.2 | local coordinates: 0, -1.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 22 global coordinates: 3.1, -1.3, 30.2 | local coordinates: 0, -1.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 23 global coordinates: 3.1, -1.5, 30.2 | local coordinates: 0, -1.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 24 global coordinates: 3.1, -1.7, 30.2 | local coordinates: 0, -1.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 25 global coordinates: 3.1, -1.9, 30.2 | local coordinates: 0, -1.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 26 global coordinates: 3.1, -2.1, 30.2 | local coordinates: 0, -2.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 27 global coordinates: 3.1, -2.3, 30.2 | local coordinates: 0, -2.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 28 global coordinates: 3.1, -2.5, 30.2 | local coordinates: 0, -2.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 29 global coordinates: 3.1, -2.7, 30.2 | local coordinates: 0, -2.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 30 global coordinates: 3.1, -2.9, 30.2 | local coordinates: 0, -2.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_X strip 31 global coordinates: 3.1, -3.1, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 1 global coordinates: 2.9, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 2 global coordinates: 2.7, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 3 global coordinates: 2.5, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 4 global coordinates: 2.3, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 5 global coordinates: 2.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 6 global coordinates: 1.9, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 7 global coordinates: 1.7, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 8 global coordinates: 1.5, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 9 global coordinates: 1.3, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 10 global coordinates: 1.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 11 global coordinates: 0.9, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 12 global coordinates: 0.7, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 13 global coordinates: 0.5, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 14 global coordinates: 0.3, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 15 global coordinates: 0.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 16 global coordinates: -0.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 17 global coordinates: -0.3, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 18 global coordinates: -0.5, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 19 global coordinates: -0.7, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 20 global coordinates: -0.9, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 21 global coordinates: -1.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 22 global coordinates: -1.3, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 23 global coordinates: -1.5, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 24 global coordinates: -1.7, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 25 global coordinates: -1.9, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 26 global coordinates: -2.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 27 global coordinates: -2.3, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 28 global coordinates: -2.5, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 29 global coordinates: -2.7, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 30 global coordinates: -2.9, 0, 30.2 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT1_YX_Y strip 31 global coordinates: -3.1, 0, 30.2 | local coordinates: 0, -3.1, 0
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   0.000000
+  0.000000    1.000000    0.000000    Ty =   0.000000
+  0.000000    0.000000    1.000000    Tz =  30.200000
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 0 global coordinates: 3.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 0 global coordinates: 3.1, 3.1, 32.3 | local coordinates: 0, 3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 1 global coordinates: 3.1, 2.9, 32.3 | local coordinates: 0, 2.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 2 global coordinates: 3.1, 2.7, 32.3 | local coordinates: 0, 2.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 3 global coordinates: 3.1, 2.5, 32.3 | local coordinates: 0, 2.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 4 global coordinates: 3.1, 2.3, 32.3 | local coordinates: 0, 2.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 5 global coordinates: 3.1, 2.1, 32.3 | local coordinates: 0, 2.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 6 global coordinates: 3.1, 1.9, 32.3 | local coordinates: 0, 1.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 7 global coordinates: 3.1, 1.7, 32.3 | local coordinates: 0, 1.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 8 global coordinates: 3.1, 1.5, 32.3 | local coordinates: 0, 1.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 9 global coordinates: 3.1, 1.3, 32.3 | local coordinates: 0, 1.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 10 global coordinates: 3.1, 1.1, 32.3 | local coordinates: 0, 1.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 11 global coordinates: 3.1, 0.9, 32.3 | local coordinates: 0, 0.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 12 global coordinates: 3.1, 0.7, 32.3 | local coordinates: 0, 0.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 13 global coordinates: 3.1, 0.5, 32.3 | local coordinates: 0, 0.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 14 global coordinates: 3.1, 0.3, 32.3 | local coordinates: 0, 0.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 15 global coordinates: 3.1, 0.1, 32.3 | local coordinates: 0, 0.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 16 global coordinates: 3.1, -0.1, 32.3 | local coordinates: 0, -0.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 17 global coordinates: 3.1, -0.3, 32.3 | local coordinates: 0, -0.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 18 global coordinates: 3.1, -0.5, 32.3 | local coordinates: 0, -0.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 19 global coordinates: 3.1, -0.7, 32.3 | local coordinates: 0, -0.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 20 global coordinates: 3.1, -0.9, 32.3 | local coordinates: 0, -0.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 21 global coordinates: 3.1, -1.1, 32.3 | local coordinates: 0, -1.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 22 global coordinates: 3.1, -1.3, 32.3 | local coordinates: 0, -1.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 23 global coordinates: 3.1, -1.5, 32.3 | local coordinates: 0, -1.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 24 global coordinates: 3.1, -1.7, 32.3 | local coordinates: 0, -1.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 25 global coordinates: 3.1, -1.9, 32.3 | local coordinates: 0, -1.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 26 global coordinates: 3.1, -2.1, 32.3 | local coordinates: 0, -2.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 27 global coordinates: 3.1, -2.3, 32.3 | local coordinates: 0, -2.3, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 28 global coordinates: 3.1, -2.5, 32.3 | local coordinates: 0, -2.5, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 29 global coordinates: 3.1, -2.7, 32.3 | local coordinates: 0, -2.7, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 30 global coordinates: 3.1, -2.9, 32.3 | local coordinates: 0, -2.9, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_Y strip 31 global coordinates: 3.1, -3.1, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 1 global coordinates: 2.9, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 2 global coordinates: 2.7, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 3 global coordinates: 2.5, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 4 global coordinates: 2.3, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 5 global coordinates: 2.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 6 global coordinates: 1.9, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 7 global coordinates: 1.7, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 8 global coordinates: 1.5, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 9 global coordinates: 1.3, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 10 global coordinates: 1.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 11 global coordinates: 0.9, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 12 global coordinates: 0.7, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 13 global coordinates: 0.5, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 14 global coordinates: 0.3, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 15 global coordinates: 0.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 16 global coordinates: -0.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 17 global coordinates: -0.3, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 18 global coordinates: -0.5, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 19 global coordinates: -0.7, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 20 global coordinates: -0.9, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 21 global coordinates: -1.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 22 global coordinates: -1.3, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 23 global coordinates: -1.5, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 24 global coordinates: -1.7, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 25 global coordinates: -1.9, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 26 global coordinates: -2.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 27 global coordinates: -2.3, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 28 global coordinates: -2.5, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 29 global coordinates: -2.7, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 30 global coordinates: -2.9, 0, 32.3 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Central_telescope_DoubleSi_DSD_CT2_XY_X strip 31 global coordinates: -3.1, 0, 32.3 | local coordinates: 0, -3.1, 0
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   0.000000
+  0.000000    1.000000    0.000000    Ty =   0.000000
+  0.000000    0.000000    1.000000    Tz =  32.300000
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 0 global coordinates: -2.0375, 2.35, 19.7999 | local coordinates: 0, -3.1, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 0 global coordinates: -2.0375, 5.1625, 19.7999 | local coordinates: 0, 2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 1 global coordinates: -2.0375, 4.7875, 19.7999 | local coordinates: 0, 2.4375, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 2 global coordinates: -2.0375, 4.4125, 19.7999 | local coordinates: 0, 2.0625, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 3 global coordinates: -2.0375, 4.0375, 19.7999 | local coordinates: 0, 1.6875, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 4 global coordinates: -2.0375, 3.6625, 19.7999 | local coordinates: 0, 1.3125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 5 global coordinates: -2.0375, 3.2875, 19.7999 | local coordinates: 0, 0.9375, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 6 global coordinates: -2.0375, 2.9125, 19.7999 | local coordinates: 0, 0.5625, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 7 global coordinates: -2.0375, 2.5375, 19.7999 | local coordinates: 0, 0.1875, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 8 global coordinates: -2.0375, 2.1625, 19.7999 | local coordinates: 0, -0.1875, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 9 global coordinates: -2.0375, 1.7875, 19.7999 | local coordinates: 0, -0.5625, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 10 global coordinates: -2.0375, 1.4125, 19.7999 | local coordinates: 0, -0.9375, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 11 global coordinates: -2.0375, 1.0375, 19.7999 | local coordinates: 0, -1.3125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 12 global coordinates: -2.0375, 0.6625, 19.7999 | local coordinates: 0, -1.6875, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 13 global coordinates: -2.0375, 0.2875, 19.7999 | local coordinates: 0, -2.0625, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 14 global coordinates: -2.0375, -0.0875, 19.7999 | local coordinates: 0, -2.4375, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_Y strip 15 global coordinates: -2.0375, -0.4625, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 1 global coordinates: -2.4125, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 2 global coordinates: -2.7875, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 3 global coordinates: -3.1625, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 4 global coordinates: -3.5375, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 5 global coordinates: -3.9125, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 6 global coordinates: -4.2875, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 7 global coordinates: -4.6625, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 8 global coordinates: -5.0375, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 9 global coordinates: -5.4125, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 10 global coordinates: -5.7875, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 11 global coordinates: -6.1625, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 12 global coordinates: -6.5375, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 13 global coordinates: -6.9125, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 14 global coordinates: -7.2875, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_1_DoubleSi_DSD1_XY_X strip 15 global coordinates: -7.6625, 2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =  -4.850000
+  0.000000    1.000000    0.000000    Ty =   2.350000
+  0.000000    0.000000    1.000000    Tz =  19.800000
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 0 global coordinates: -6.97375, 2.08, 17.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 1 global coordinates: -6.66125, 2.08, 17.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 2 global coordinates: -6.34875, 2.08, 17.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 3 global coordinates: -6.03625, 2.08, 17.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 4 global coordinates: -5.72375, 2.08, 17.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 5 global coordinates: -5.41125, 2.08, 17.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 6 global coordinates: -5.09875, 2.08, 17.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 7 global coordinates: -4.78625, 2.08, 17.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 8 global coordinates: -4.47375, 2.08, 17.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 9 global coordinates: -4.16125, 2.08, 17.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 10 global coordinates: -3.84875, 2.08, 17.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 11 global coordinates: -3.53625, 2.08, 17.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 12 global coordinates: -3.22375, 2.08, 17.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 13 global coordinates: -2.91125, 2.08, 17.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 14 global coordinates: -2.59875, 2.08, 17.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD20_1_X_0 strip 15 global coordinates: -2.28625, 2.08, 17.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =  -4.630000
+  0.000000    1.000000    0.000000    Ty =   2.080000
+  0.000000    0.000000    1.000000    Tz =  17.300000
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 0 global coordinates: -4.63, -0.26375, 18.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 1 global coordinates: -4.63, 0.04875, 18.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 2 global coordinates: -4.63, 0.36125, 18.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 3 global coordinates: -4.63, 0.67375, 18.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 4 global coordinates: -4.63, 0.98625, 18.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 5 global coordinates: -4.63, 1.29875, 18.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 6 global coordinates: -4.63, 1.61125, 18.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 7 global coordinates: -4.63, 1.92375, 18.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 8 global coordinates: -4.63, 2.23625, 18.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 9 global coordinates: -4.63, 2.54875, 18.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 10 global coordinates: -4.63, 2.86125, 18.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 11 global coordinates: -4.63, 3.17375, 18.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 12 global coordinates: -4.63, 3.48625, 18.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 13 global coordinates: -4.63, 3.79875, 18.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 14 global coordinates: -4.63, 4.11125, 18.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD50_1_Y_0 strip 15 global coordinates: -4.63, 4.42375, 18.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  0.000000   -1.000000    0.000000    Tx =  -4.630000
+  1.000000    0.000000    0.000000    Ty =   2.080000
+  0.000000    0.000000    1.000000    Tz =  18.300000
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 0 global coordinates: -4.85, -0.4625, 20.7999 | local coordinates: -2.8125, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 1 global coordinates: -4.85, -0.0875, 20.7999 | local coordinates: -2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 2 global coordinates: -4.85, 0.2875, 20.7999 | local coordinates: -2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 3 global coordinates: -4.85, 0.6625, 20.7999 | local coordinates: -1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 4 global coordinates: -4.85, 1.0375, 20.7999 | local coordinates: -1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 5 global coordinates: -4.85, 1.4125, 20.7999 | local coordinates: -0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 6 global coordinates: -4.85, 1.7875, 20.7999 | local coordinates: -0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 7 global coordinates: -4.85, 2.1625, 20.7999 | local coordinates: -0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 8 global coordinates: -4.85, 2.5375, 20.7999 | local coordinates: 0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 9 global coordinates: -4.85, 2.9125, 20.7999 | local coordinates: 0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 10 global coordinates: -4.85, 3.2875, 20.7999 | local coordinates: 0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 11 global coordinates: -4.85, 3.6625, 20.7999 | local coordinates: 1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 12 global coordinates: -4.85, 4.0375, 20.7999 | local coordinates: 1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 13 global coordinates: -4.85, 4.4125, 20.7999 | local coordinates: 2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 14 global coordinates: -4.85, 4.7875, 20.7999 | local coordinates: 2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_1_SingleSi_SSD_V_1_Y_0 strip 15 global coordinates: -4.85, 5.1625, 20.7999 | local coordinates: 2.8125, 0, -7.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  0.000000   -1.000000    0.000000    Tx =  -4.850000
+  1.000000    0.000000    0.000000    Ty =   2.350000
+  0.000000    0.000000    1.000000    Tz =  20.800000
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 0 global coordinates: 0.4625, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 0 global coordinates: 0.4625, -2.0375, 19.7999 | local coordinates: 0, 2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 1 global coordinates: 0.4625, -2.4125, 19.7999 | local coordinates: 0, 2.4375, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 2 global coordinates: 0.4625, -2.7875, 19.7999 | local coordinates: 0, 2.0625, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 3 global coordinates: 0.4625, -3.1625, 19.7999 | local coordinates: 0, 1.6875, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 4 global coordinates: 0.4625, -3.5375, 19.7999 | local coordinates: 0, 1.3125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 5 global coordinates: 0.4625, -3.9125, 19.7999 | local coordinates: 0, 0.9375, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 6 global coordinates: 0.4625, -4.2875, 19.7999 | local coordinates: 0, 0.5625, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 7 global coordinates: 0.4625, -4.6625, 19.7999 | local coordinates: 0, 0.1875, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 8 global coordinates: 0.4625, -5.0375, 19.7999 | local coordinates: 0, -0.1875, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 9 global coordinates: 0.4625, -5.4125, 19.7999 | local coordinates: 0, -0.5625, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 10 global coordinates: 0.4625, -5.7875, 19.7999 | local coordinates: 0, -0.9375, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 11 global coordinates: 0.4625, -6.1625, 19.7999 | local coordinates: 0, -1.3125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 12 global coordinates: 0.4625, -6.5375, 19.7999 | local coordinates: 0, -1.6875, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 13 global coordinates: 0.4625, -6.9125, 19.7999 | local coordinates: 0, -2.0625, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 14 global coordinates: 0.4625, -7.2875, 19.7999 | local coordinates: 0, -2.4375, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_X strip 15 global coordinates: 0.4625, -7.6625, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 1 global coordinates: 0.0875, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 2 global coordinates: -0.2875, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 3 global coordinates: -0.6625, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 4 global coordinates: -1.0375, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 5 global coordinates: -1.4125, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 6 global coordinates: -1.7875, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 7 global coordinates: -2.1625, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 8 global coordinates: -2.5375, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 9 global coordinates: -2.9125, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 10 global coordinates: -3.2875, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 11 global coordinates: -3.6625, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 12 global coordinates: -4.0375, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 13 global coordinates: -4.4125, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 14 global coordinates: -4.7875, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_2_DoubleSi_DSD2_YX_Y strip 15 global coordinates: -5.1625, -4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =  -2.350000
+  0.000000    1.000000    0.000000    Ty =  -4.850000
+  0.000000    0.000000    1.000000    Tz =  19.800000
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 0 global coordinates: -2.08, -6.97375, 17.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 1 global coordinates: -2.08, -6.66125, 17.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 2 global coordinates: -2.08, -6.34875, 17.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 3 global coordinates: -2.08, -6.03625, 17.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 4 global coordinates: -2.08, -5.72375, 17.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 5 global coordinates: -2.08, -5.41125, 17.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 6 global coordinates: -2.08, -5.09875, 17.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 7 global coordinates: -2.08, -4.78625, 17.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 8 global coordinates: -2.08, -4.47375, 17.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 9 global coordinates: -2.08, -4.16125, 17.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 10 global coordinates: -2.08, -3.84875, 17.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 11 global coordinates: -2.08, -3.53625, 17.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 12 global coordinates: -2.08, -3.22375, 17.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 13 global coordinates: -2.08, -2.91125, 17.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 14 global coordinates: -2.08, -2.59875, 17.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD20_2_Y_0 strip 15 global coordinates: -2.08, -2.28625, 17.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  0.000000   -1.000000    0.000000    Tx =  -2.080000
+  1.000000    0.000000    0.000000    Ty =  -4.630000
+  0.000000    0.000000    1.000000    Tz =  17.300000
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 0 global coordinates: -4.47375, -5.12, 18.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 1 global coordinates: -4.16125, -5.12, 18.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 2 global coordinates: -3.84875, -5.12, 18.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 3 global coordinates: -3.53625, -5.12, 18.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 4 global coordinates: -3.22375, -5.12, 18.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 5 global coordinates: -2.91125, -5.12, 18.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 6 global coordinates: -2.59875, -5.12, 18.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 7 global coordinates: -2.28625, -5.12, 18.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 8 global coordinates: -1.97375, -5.12, 18.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 9 global coordinates: -1.66125, -5.12, 18.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 10 global coordinates: -1.34875, -5.12, 18.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 11 global coordinates: -1.03625, -5.12, 18.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 12 global coordinates: -0.72375, -5.12, 18.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 13 global coordinates: -0.41125, -5.12, 18.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 14 global coordinates: -0.09875, -5.12, 18.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD50_2_X_0 strip 15 global coordinates: 0.21375, -5.12, 18.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =  -2.130000
+  0.000000    1.000000    0.000000    Ty =  -5.120000
+  0.000000    0.000000    1.000000    Tz =  18.300000
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 0 global coordinates: -5.1625, -4.85, 20.7999 | local coordinates: -2.8125, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 1 global coordinates: -4.7875, -4.85, 20.7999 | local coordinates: -2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 2 global coordinates: -4.4125, -4.85, 20.7999 | local coordinates: -2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 3 global coordinates: -4.0375, -4.85, 20.7999 | local coordinates: -1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 4 global coordinates: -3.6625, -4.85, 20.7999 | local coordinates: -1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 5 global coordinates: -3.2875, -4.85, 20.7999 | local coordinates: -0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 6 global coordinates: -2.9125, -4.85, 20.7999 | local coordinates: -0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 7 global coordinates: -2.5375, -4.85, 20.7999 | local coordinates: -0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 8 global coordinates: -2.1625, -4.85, 20.7999 | local coordinates: 0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 9 global coordinates: -1.7875, -4.85, 20.7999 | local coordinates: 0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 10 global coordinates: -1.4125, -4.85, 20.7999 | local coordinates: 0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 11 global coordinates: -1.0375, -4.85, 20.7999 | local coordinates: 1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 12 global coordinates: -0.6625, -4.85, 20.7999 | local coordinates: 1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 13 global coordinates: -0.2875, -4.85, 20.7999 | local coordinates: 2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 14 global coordinates: 0.0875, -4.85, 20.7999 | local coordinates: 2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_2_SingleSi_SSD_V_2_X_0 strip 15 global coordinates: 0.4625, -4.85, 20.7999 | local coordinates: 2.8125, 0, -7.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =  -2.350000
+  0.000000    1.000000    0.000000    Ty =  -4.850000
+  0.000000    0.000000    1.000000    Tz =  20.800000
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 0 global coordinates: 7.6625, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 0 global coordinates: 7.6625, 0.4625, 19.7999 | local coordinates: 0, 2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 1 global coordinates: 7.6625, 0.0875, 19.7999 | local coordinates: 0, 2.4375, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 2 global coordinates: 7.6625, -0.2875, 19.7999 | local coordinates: 0, 2.0625, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 3 global coordinates: 7.6625, -0.6625, 19.7999 | local coordinates: 0, 1.6875, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 4 global coordinates: 7.6625, -1.0375, 19.7999 | local coordinates: 0, 1.3125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 5 global coordinates: 7.6625, -1.4125, 19.7999 | local coordinates: 0, 0.9375, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 6 global coordinates: 7.6625, -1.7875, 19.7999 | local coordinates: 0, 0.5625, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 7 global coordinates: 7.6625, -2.1625, 19.7999 | local coordinates: 0, 0.1875, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 8 global coordinates: 7.6625, -2.5375, 19.7999 | local coordinates: 0, -0.1875, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 9 global coordinates: 7.6625, -2.9125, 19.7999 | local coordinates: 0, -0.5625, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 10 global coordinates: 7.6625, -3.2875, 19.7999 | local coordinates: 0, -0.9375, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 11 global coordinates: 7.6625, -3.6625, 19.7999 | local coordinates: 0, -1.3125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 12 global coordinates: 7.6625, -4.0375, 19.7999 | local coordinates: 0, -1.6875, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 13 global coordinates: 7.6625, -4.4125, 19.7999 | local coordinates: 0, -2.0625, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 14 global coordinates: 7.6625, -4.7875, 19.7999 | local coordinates: 0, -2.4375, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_Y strip 15 global coordinates: 7.6625, -5.1625, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 1 global coordinates: 7.2875, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 2 global coordinates: 6.9125, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 3 global coordinates: 6.5375, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 4 global coordinates: 6.1625, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 5 global coordinates: 5.7875, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 6 global coordinates: 5.4125, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 7 global coordinates: 5.0375, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 8 global coordinates: 4.6625, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 9 global coordinates: 4.2875, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 10 global coordinates: 3.9125, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 11 global coordinates: 3.5375, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 12 global coordinates: 3.1625, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 13 global coordinates: 2.7875, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 14 global coordinates: 2.4125, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_3_DoubleSi_DSD3_XY_X strip 15 global coordinates: 2.0375, -2.35, 19.7999 | local coordinates: 0, -2.8125, 0
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   4.850000
+  0.000000    1.000000    0.000000    Ty =  -2.350000
+  0.000000    0.000000    1.000000    Tz =  19.800000
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 0 global coordinates: 2.28625, -2.08, 17.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 1 global coordinates: 2.59875, -2.08, 17.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 2 global coordinates: 2.91125, -2.08, 17.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 3 global coordinates: 3.22375, -2.08, 17.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 4 global coordinates: 3.53625, -2.08, 17.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 5 global coordinates: 3.84875, -2.08, 17.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 6 global coordinates: 4.16125, -2.08, 17.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 7 global coordinates: 4.47375, -2.08, 17.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 8 global coordinates: 4.78625, -2.08, 17.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 9 global coordinates: 5.09875, -2.08, 17.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 10 global coordinates: 5.41125, -2.08, 17.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 11 global coordinates: 5.72375, -2.08, 17.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 12 global coordinates: 6.03625, -2.08, 17.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 13 global coordinates: 6.34875, -2.08, 17.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 14 global coordinates: 6.66125, -2.08, 17.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD20_3_X_0 strip 15 global coordinates: 6.97375, -2.08, 17.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   4.630000
+  0.000000    1.000000    0.000000    Ty =  -2.080000
+  0.000000    0.000000    1.000000    Tz =  17.300000
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 0 global coordinates: 4.63, -4.42375, 18.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 1 global coordinates: 4.63, -4.11125, 18.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 2 global coordinates: 4.63, -3.79875, 18.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 3 global coordinates: 4.63, -3.48625, 18.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 4 global coordinates: 4.63, -3.17375, 18.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 5 global coordinates: 4.63, -2.86125, 18.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 6 global coordinates: 4.63, -2.54875, 18.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 7 global coordinates: 4.63, -2.23625, 18.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 8 global coordinates: 4.63, -1.92375, 18.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 9 global coordinates: 4.63, -1.61125, 18.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 10 global coordinates: 4.63, -1.29875, 18.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 11 global coordinates: 4.63, -0.98625, 18.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 12 global coordinates: 4.63, -0.67375, 18.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 13 global coordinates: 4.63, -0.36125, 18.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 14 global coordinates: 4.63, -0.04875, 18.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD50_3_Y_0 strip 15 global coordinates: 4.63, 0.26375, 18.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  0.000000   -1.000000    0.000000    Tx =   4.630000
+  1.000000    0.000000    0.000000    Ty =  -2.080000
+  0.000000    0.000000    1.000000    Tz =  18.300000
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 0 global coordinates: 4.85, -5.1625, 20.7999 | local coordinates: -2.8125, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 1 global coordinates: 4.85, -4.7875, 20.7999 | local coordinates: -2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 2 global coordinates: 4.85, -4.4125, 20.7999 | local coordinates: -2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 3 global coordinates: 4.85, -4.0375, 20.7999 | local coordinates: -1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 4 global coordinates: 4.85, -3.6625, 20.7999 | local coordinates: -1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 5 global coordinates: 4.85, -3.2875, 20.7999 | local coordinates: -0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 6 global coordinates: 4.85, -2.9125, 20.7999 | local coordinates: -0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 7 global coordinates: 4.85, -2.5375, 20.7999 | local coordinates: -0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 8 global coordinates: 4.85, -2.1625, 20.7999 | local coordinates: 0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 9 global coordinates: 4.85, -1.7875, 20.7999 | local coordinates: 0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 10 global coordinates: 4.85, -1.4125, 20.7999 | local coordinates: 0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 11 global coordinates: 4.85, -1.0375, 20.7999 | local coordinates: 1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 12 global coordinates: 4.85, -0.6625, 20.7999 | local coordinates: 1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 13 global coordinates: 4.85, -0.2875, 20.7999 | local coordinates: 2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 14 global coordinates: 4.85, 0.0875, 20.7999 | local coordinates: 2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_3_SingleSi_SSD_V_3_Y_0 strip 15 global coordinates: 4.85, 0.4625, 20.7999 | local coordinates: 2.8125, 0, -7.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  0.000000   -1.000000    0.000000    Tx =   4.850000
+  1.000000    0.000000    0.000000    Ty =  -2.350000
+  0.000000    0.000000    1.000000    Tz =  20.800000
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 0 global coordinates: 5.1625, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 0 global coordinates: 5.1625, 7.6625, 19.7999 | local coordinates: 0, 2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 1 global coordinates: 5.1625, 7.2875, 19.7999 | local coordinates: 0, 2.4375, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 2 global coordinates: 5.1625, 6.9125, 19.7999 | local coordinates: 0, 2.0625, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 3 global coordinates: 5.1625, 6.5375, 19.7999 | local coordinates: 0, 1.6875, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 4 global coordinates: 5.1625, 6.1625, 19.7999 | local coordinates: 0, 1.3125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 5 global coordinates: 5.1625, 5.7875, 19.7999 | local coordinates: 0, 0.9375, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 6 global coordinates: 5.1625, 5.4125, 19.7999 | local coordinates: 0, 0.5625, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 7 global coordinates: 5.1625, 5.0375, 19.7999 | local coordinates: 0, 0.1875, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 8 global coordinates: 5.1625, 4.6625, 19.7999 | local coordinates: 0, -0.1875, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 9 global coordinates: 5.1625, 4.2875, 19.7999 | local coordinates: 0, -0.5625, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 10 global coordinates: 5.1625, 3.9125, 19.7999 | local coordinates: 0, -0.9375, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 11 global coordinates: 5.1625, 3.5375, 19.7999 | local coordinates: 0, -1.3125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 12 global coordinates: 5.1625, 3.1625, 19.7999 | local coordinates: 0, -1.6875, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 13 global coordinates: 5.1625, 2.7875, 19.7999 | local coordinates: 0, -2.0625, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 14 global coordinates: 5.1625, 2.4125, 19.7999 | local coordinates: 0, -2.4375, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_X strip 15 global coordinates: 5.1625, 2.0375, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 1 global coordinates: 4.7875, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 2 global coordinates: 4.4125, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 3 global coordinates: 4.0375, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 4 global coordinates: 3.6625, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 5 global coordinates: 3.2875, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 6 global coordinates: 2.9125, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 7 global coordinates: 2.5375, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 8 global coordinates: 2.1625, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 9 global coordinates: 1.7875, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 10 global coordinates: 1.4125, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 11 global coordinates: 1.0375, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 12 global coordinates: 0.6625, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 13 global coordinates: 0.2875, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 14 global coordinates: -0.0875, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+[DEBUG  ] Telescope_4_DoubleSi_DSD4_YX_Y strip 15 global coordinates: -0.4625, 4.85, 19.7999 | local coordinates: 0, -2.8125, 0
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   2.350000
+  0.000000    1.000000    0.000000    Ty =   4.850000
+  0.000000    0.000000    1.000000    Tz =  19.800000
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 0 global coordinates: 2.08, 2.28625, 17.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 1 global coordinates: 2.08, 2.59875, 17.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 2 global coordinates: 2.08, 2.91125, 17.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 3 global coordinates: 2.08, 3.22375, 17.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 4 global coordinates: 2.08, 3.53625, 17.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 5 global coordinates: 2.08, 3.84875, 17.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 6 global coordinates: 2.08, 4.16125, 17.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 7 global coordinates: 2.08, 4.47375, 17.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 8 global coordinates: 2.08, 4.78625, 17.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 9 global coordinates: 2.08, 5.09875, 17.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 10 global coordinates: 2.08, 5.41125, 17.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 11 global coordinates: 2.08, 5.72375, 17.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 12 global coordinates: 2.08, 6.03625, 17.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 13 global coordinates: 2.08, 6.34875, 17.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 14 global coordinates: 2.08, 6.66125, 17.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD20_4_Y_0 strip 15 global coordinates: 2.08, 6.97375, 17.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  0.000000   -1.000000    0.000000    Tx =   2.080000
+  1.000000    0.000000    0.000000    Ty =   4.630000
+  0.000000    0.000000    1.000000    Tz =  17.300000
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 0 global coordinates: -0.26375, 4.63, 18.3 | local coordinates: -2.34375, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 1 global coordinates: 0.04875, 4.63, 18.3 | local coordinates: -2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 2 global coordinates: 0.36125, 4.63, 18.3 | local coordinates: -1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 3 global coordinates: 0.67375, 4.63, 18.3 | local coordinates: -1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 4 global coordinates: 0.98625, 4.63, 18.3 | local coordinates: -1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 5 global coordinates: 1.29875, 4.63, 18.3 | local coordinates: -0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 6 global coordinates: 1.61125, 4.63, 18.3 | local coordinates: -0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 7 global coordinates: 1.92375, 4.63, 18.3 | local coordinates: -0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 8 global coordinates: 2.23625, 4.63, 18.3 | local coordinates: 0.15625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 9 global coordinates: 2.54875, 4.63, 18.3 | local coordinates: 0.46875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 10 global coordinates: 2.86125, 4.63, 18.3 | local coordinates: 0.78125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 11 global coordinates: 3.17375, 4.63, 18.3 | local coordinates: 1.09375, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 12 global coordinates: 3.48625, 4.63, 18.3 | local coordinates: 1.40625, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 13 global coordinates: 3.79875, 4.63, 18.3 | local coordinates: 1.71875, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 14 global coordinates: 4.11125, 4.63, 18.3 | local coordinates: 2.03125, 0, 2.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD50_4_X_0 strip 15 global coordinates: 4.42375, 4.63, 18.3 | local coordinates: 2.34375, 0, 2.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   2.080000
+  0.000000    1.000000    0.000000    Ty =   4.630000
+  0.000000    0.000000    1.000000    Tz =  18.300000
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 0 global coordinates: -0.4625, 4.85, 20.7999 | local coordinates: -2.8125, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 1 global coordinates: -0.0875, 4.85, 20.7999 | local coordinates: -2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 2 global coordinates: 0.2875, 4.85, 20.7999 | local coordinates: -2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 3 global coordinates: 0.6625, 4.85, 20.7999 | local coordinates: -1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 4 global coordinates: 1.0375, 4.85, 20.7999 | local coordinates: -1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 5 global coordinates: 1.4125, 4.85, 20.7999 | local coordinates: -0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 6 global coordinates: 1.7875, 4.85, 20.7999 | local coordinates: -0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 7 global coordinates: 2.1625, 4.85, 20.7999 | local coordinates: -0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 8 global coordinates: 2.5375, 4.85, 20.7999 | local coordinates: 0.1875, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 9 global coordinates: 2.9125, 4.85, 20.7999 | local coordinates: 0.5625, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 10 global coordinates: 3.2875, 4.85, 20.7999 | local coordinates: 0.9375, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 11 global coordinates: 3.6625, 4.85, 20.7999 | local coordinates: 1.3125, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 12 global coordinates: 4.0375, 4.85, 20.7999 | local coordinates: 1.6875, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 13 global coordinates: 4.4125, 4.85, 20.7999 | local coordinates: 2.0625, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 14 global coordinates: 4.7875, 4.85, 20.7999 | local coordinates: 2.4375, 0, -7.5e-05
+[DEBUG  ] Telescope_4_SingleSi_SSD_V_4_X_0 strip 15 global coordinates: 5.1625, 4.85, 20.7999 | local coordinates: 2.8125, 0, -7.5e-05
+matrix  - tr=1  rot=1  refl=0  scl=0
+  1.000000    0.000000    0.000000    Tx =   2.350000
+  0.000000    1.000000    0.000000    Ty =   4.850000
+  0.000000    0.000000    1.000000    Tz =  20.800000
+[DEBUG  ] Try to find an object BeamDetToFDigi1 describing the branch in the folder structure in file
+[INFO   ] Object BeamDetToFDigi1 describing the branch in the folder structure was found
+[DEBUG  ] Try to find an object BeamDetToFDigi2 describing the branch in the folder structure in file
+[INFO   ] Object BeamDetToFDigi2 describing the branch in the folder structure was found
+[DEBUG  ] ERBeamDetSetup initialized! 
+[DEBUG  ] Digi branch TelescopeDigi_Central_telescope_CsI
+[DEBUG  ] Digi branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_X
+[DEBUG  ] Digi branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT1_YX_Y
+[DEBUG  ] Digi branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_X
+[DEBUG  ] Digi branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_1_DoubleSi_DSD1_XY_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_1_SingleSi_SSD20_1_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_1_SingleSi_SSD50_1_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_1_SingleSi_SSD_V_1_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_2_DoubleSi_DSD2_YX_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_2_SingleSi_SSD20_2_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_2_SingleSi_SSD50_2_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_2_SingleSi_SSD_V_2_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_3_DoubleSi_DSD3_XY_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_3_SingleSi_SSD20_3_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_3_SingleSi_SSD50_3_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_3_SingleSi_SSD_V_3_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_4_DoubleSi_DSD4_YX_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_4_SingleSi_SSD20_4_Y
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_4_SingleSi_SSD50_4_X
+[DEBUG  ] Digi branch TelescopeDigi_Telescope_4_SingleSi_SSD_V_4_X
+[DEBUG  ] Try to find an object NDDigi describing the branch in the folder structure in file
+[INFO   ] Object NDDigi describing the branch in the folder structure was found
+[WARNING] Availible run manager not defined for task ERNDPID
+[WARNING] No check will be performed
+
+=============================================================
+ Geant4 Virtual Monte Carlo 
+ Version 3.3 ( 15 January 2016 )
+ WWW : http://root.cern.ch/drupal/content/geant4-vmc
+=============================================================
+
+isMaster=1
+Running TVirtualMCApplication::ConstructGeometry
+*************************************************************
+ Geant4 version Name: geant4-10-02-patch-01    (26-February-2016)
+                      Copyright : Geant4 Collaboration
+                      Reference : NIM A 506 (2003), 250-303
+                            WWW : http://cern.ch/geant4
+*************************************************************
+
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material silicon
+G4Material WARNING: duplicate name of material vacuum
+G4Material WARNING: duplicate name of material Steel
+G4Material WARNING: duplicate name of material CF4
+G4Material WARNING: duplicate name of material kapton
+G4Material WARNING: duplicate name of material Steel
+G4Material WARNING: duplicate name of material tungsten
+G4Material WARNING: duplicate name of material Steel
+G4Material WARNING: duplicate name of material vacuum
+===> GEANT4 materials created and mapped to TGeo ones...
+===> GEANT4 physical volumes created and mapped to TGeo hierarchy...
+### INFO: TG4RootDetectorConstruction::Construct() finished
+TG4PostDetConstruction::Initialize
+G4 Stat: instantiated 79 logical volumes 
+                      639 physical volumes
+The tables for UV photon tracking set for CsI
+Adding EMPhysicsList emStandard
+Adding SpecialPhysicsList specialCuts+stackPopper
+Visualization Manager instantiating with verbosity "warnings (3)"...
+You are setting a new verbose level for Particle HP package.
+the new value will be used in whole of the Particle HP package, i.e., models and cross sections for Capture, Elastic, Fission and Inelastic interaction.
+TG4RootDetectorConstruction::ConstructSDandField
+TG4PostDetConstruction::InitializeSDandField
+### INFO: TG4RootDetectorConstruction::ConstructSDandField finished
+### EM physics constructed. 
+### Processes mapped to VMC controls ok.
+### Special Cuts constructed. 
+### Stack popper physics constructed.
+### User particles physics constructed. 
+### Processes mapped to VMC codes ok.
+TGEmModelPhysics::ConstructProcess 
+No EM models are defined.
+Available UI session types: [ GAG, tcsh, csh ]
+
+phot:   for  gamma    SubType= 12  BuildTable= 0
+      LambdaPrime table from 200 keV to 10 TeV in 54 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       PhotoElectric :  Emin=        0 eV    Emax=       10 TeV   AngularGenSauterGavrila  FluoActive
+
+compt:   for  gamma    SubType= 13  BuildTable= 1
+      Lambda table from 100 eV  to 1 MeV, 7 bins per decade, spline: 1
+      LambdaPrime table from 1 MeV to 10 TeV in 49 bins 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+       Klein-Nishina :  Emin=        0 eV    Emax=       10 TeV
+
+conv:   for  gamma    SubType= 14  BuildTable= 1
+      Lambda table from 1.022 MeV to 10 TeV, 20 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        BetheHeitler :  Emin=        0 eV    Emax=       80 GeV
+     BetheHeitlerLPM :  Emin=       80 GeV   Emax=       10 TeV
+
+msc:   for e-    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  HighEnergyThreshold(GeV)= 10000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+CoulombScat:   for  e-, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from 100 MeV to 10 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for e+    SubType= 10
+      RangeFactor= 0.04, stepLimitType: 1, latDisplacement: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=      100 MeV  Table with 42 bins Emin=    100 eV    Emax=    100 MeV
+        WentzelVIUni :  Emin=      100 MeV   Emax=       10 TeV  Table with 35 bins Emin=    100 MeV   Emax=     10 TeV
+
+eIoni:   for  e+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        MollerBhabha :  Emin=        0 eV    Emax=       10 TeV
+
+eBrem:   for  e+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      LPM flag: 1 for E > 1 GeV,  HighEnergyThreshold(GeV)= 10000
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+             eBremSB :  Emin=        0 eV    Emax=        1 GeV   DipBustGen
+            eBremLPM :  Emin=        1 GeV   Emax=       10 TeV   DipBustGen
+
+annihil:   for  e+, integral: 1     SubType= 5  BuildTable= 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            eplus2gg :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  e+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from 100 MeV to 10 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=      100 MeV   Emax=       10 TeV
+
+msc:   for proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 13x1001; from 7.50618 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  proton, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of anti_proton
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for GenericIon    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=       10 TeV
+
+ionIoni:   for  GenericIon    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      Stopping Power data for 17 ion/material pairs 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+msc:   for alpha    SubType= 10
+      RangeFactor= 0.2, stepLimitType: 0, latDisplacement: 0
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            UrbanMsc :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+ionIoni:   for  alpha    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.01, dRoverRange= 0.1, integral: 1, fluct: 1, linLossLimit= 0.02
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            BraggIon :  Emin=        0 eV    Emax=   7.9452 MeV
+          BetheBloch :  Emin=   7.9452 MeV   Emax=       10 TeV
+
+msc:   for anti_proton    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  anti_proton    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=        2 MeV
+          BetheBloch :  Emin=        2 MeV   Emax=       10 TeV
+
+hBrems:   for  anti_proton    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  anti_proton    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 13x1001; from 7.50618 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  anti_proton, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 10 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 14x1001; from 3.94942 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  kaon+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 10 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for kaon-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  kaon-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  1.05231 MeV
+          BetheBloch :  Emin=  1.05231 MeV   Emax=       10 TeV
+
+hBrems:   for  kaon-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  kaon-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 14x1001; from 3.94942 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  kaon-, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of kaon+
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 17x1001; from 1 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 10 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for mu-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+muIoni:   for  mu-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=      200 keV
+          BetheBloch :  Emin=      200 keV   Emax=        1 GeV
+        MuBetheBloch :  Emin=        1 GeV   Emax=       10 TeV
+
+muBrems:   for  mu-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+              MuBrem :  Emin=        0 eV    Emax=       10 TeV
+
+muPairProd:   for  mu-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 17x1001; from 1 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+          muPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  mu-, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of mu+
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi+    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi+    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               Bragg :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi+    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi+    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 16x1001; from 1.11656 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  pi+, integral: 1     SubType= 1  BuildTable= 1
+      Lambda table from threshold  to 10 TeV, 7 bins per decade, spline: 1
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+
+msc:   for pi-    SubType= 10
+      RangeFactor= 0.2, step limit type: 0, lateralDisplacement: 0, polarAngleLimit(deg)= 180
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+        WentzelVIUni :  Emin=        0 eV    Emax=       10 TeV  Table with 77 bins Emin=    100 eV    Emax=     10 TeV
+
+hIoni:   for  pi-    SubType= 2
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      finalRange(mm)= 0.1, dRoverRange= 0.2, integral: 1, fluct: 1, linLossLimit= 0.01
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+            ICRU73QO :  Emin=        0 eV    Emax=  297.505 keV
+          BetheBloch :  Emin=  297.505 keV   Emax=       10 TeV
+
+hBrems:   for  pi-    SubType= 3
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+               hBrem :  Emin=        0 eV    Emax=       10 TeV
+
+hPairProd:   for  pi-    SubType= 4
+      dE/dx and range tables from 100 eV  to 10 TeV in 77 bins
+      Lambda tables from threshold to 10 TeV, 7 bins per decade, spline: 1
+      Sampling table 16x1001; from 1.11656 GeV to 10 TeV 
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+           hPairProd :  Emin=        0 eV    Emax=       10 TeV
+
+CoulombScat:   for  pi-, integral: 1     SubType= 1  BuildTable= 1
+      Used Lambda table of pi+
+      180 < Theta(degree) < 180; pLimit(GeV^1)= 0.139531
+      ===== EM models for the G4Region  DefaultRegionForTheWorld ======
+  eCoulombScattering :  Emin=        0 eV    Emax=       10 TeV
+[INFO   ] FairRunAna::Run() After checking, the run will run from event 2225 to 2226.-- Get Event Time --
+[DEBUG  ] Get event time from MCEventHeader : 0 ns
+[DEBUG  ] --Event number --- 2225 with time ---- 0
+Event number 2225
+[DEBUG  ] [ERBeamDetTrackFinder]------------Started-----------------------------------------
+[DEBUG  ] Theta = 0.0140928; Phi = 2.28505
+[DEBUG  ] xFar = 0.16; yFar = -0.8; zFar = -81.6xClose = -0.345; yClose = -0.2175; zClose = -26.9
+[DEBUG  ] Point on target (-0.59334, 0.068952, -0.000556024) cm
+[DEBUG  ] [ERBeamDetTrackFinder]------------Finished-----------------------------------------
+[DEBUG  ] [ERTelescopeTrackFinder]------------Started--------------------------------------
+[DEBUG  ] [ERTelescopeTrackFinder] Strips array pair Central_telescope_DoubleSi_DSD_CT1_YX_X Central_telescope_DoubleSi_DSD_CT1_YX_Y
+[DEBUG  ] [ERTelescopeTrackFinder] Hits count on pair 1
+[DEBUG  ] [ERTelescopeTrackFinder] Branch names X:Central_telescope_DoubleSi_DSD_CT1_YX_X Y: Central_telescope_DoubleSi_DSD_CT1_YX_Y
+[DEBUG  ] [ERTelescopeTrackFinder] Strips pair numbers 29 6
+[DEBUG  ] [ERTelescopeTrackFinder] Coordinates from strips. x2 = 0 y1 = 0 z1 = 30.2 z2 = 30.2
+[DEBUG  ] [ERTelescopeTrackFinder] X Station Vertex (0 0 30.2)
+[DEBUG  ] [ERTelescopeTrackFinder] Y Station Vertex (0 0 30.2)
+[DEBUG  ] [ERTelescopeTrackFinder] X Station Vertex in station CS (0 0 0)
+[DEBUG  ] [ERTelescopeTrackFinder] Y Station Vertex in station CS (0 0 0)
+[DEBUG  ] [ERTelescopeTrackFinder] Strips array pair Telescope_1_DoubleSi_DSD1_XY_X Telescope_1_DoubleSi_DSD1_XY_Y
+[DEBUG  ] [ERTelescopeTrackFinder] Hits count on pair 1
+[DEBUG  ] [ERTelescopeTrackFinder] Branch names X:Telescope_1_DoubleSi_DSD1_XY_X Y: Telescope_1_DoubleSi_DSD1_XY_Y
+[DEBUG  ] [ERTelescopeTrackFinder] Strips pair numbers 0 10
+[DEBUG  ] [ERTelescopeTrackFinder] Coordinates from strips. x2 = -2.0375 y1 = 1.4125 z1 = 19.7999 z2 = 19.7999
+[DEBUG  ] [ERTelescopeTrackFinder] X Station Vertex (-2.0375 1.4125 19.7999)
+[DEBUG  ] [ERTelescopeTrackFinder] Y Station Vertex (-2.0375 1.4125 19.7999)
+[DEBUG  ] [ERTelescopeTrackFinder] X Station Vertex in station CS (2.8125 -0.9375 -5.65e-05)
+[DEBUG  ] [ERTelescopeTrackFinder] Y Station Vertex in station CS (2.8125 -0.9375 -5.65e-05)
+[DEBUG  ] [ERTelescopeTrackFinder]------------Finished--------------------------------------
+[DEBUG  ] [ERBeamDetPID]---------------------Started-----------------------------------------
+[DEBUG  ] [ERBeamDetPID] dE1 = 1.3516e-25 ToF1 = 39.3019
+[DEBUG  ] [ERBeamDetPID] dE2 = 2.1761 ToF2 = 215.795
+[DEBUG  ] [ERBeamDetPID] dE = 2.1761 MeV;  ToF1 = 39.3019 ns; ToF2 = 215.795 ns;
+[DEBUG  ] [ERBeamDetPID] dE = 2.1761 MeV;  ToF = 244.769 ns;
+[DEBUG  ] [ERBeamDetPID] Mass 7482.54
+[DEBUG  ] [ERBeamDetPID] TOF State:: PID: 1000020080; px: -11.764; py: 13.5693; pz: 1274.23 energy: 7590.28; probability 1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Eloss calculation with target vertex = (-0.59334,0.068952,-0.000556024), direction on target = (-0.00923126,0.0106479,0.999901)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Eloss calculation start vertex = (27.1004,-31.8749,-3000)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (27.1004, -31.8749, -3000)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (11.6578, -14.0623, -1327.3)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/plastic_ToF1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (11.6577, -14.0622, -1327.29)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 107.744 medium vacuum step  = 1232.1 edep = 3.91946e-20
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.283852, -0.942858, -95.3125)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/plastic_ToF2_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 107.744 medium BC408 step  = 0.0250015 edep = 3.65326
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.283621, -0.942592, -95.2875)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 104.09 medium vacuum step  = 10.186 edep = 3.50339e-22
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 217.854 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.189592, -0.834132, -85.1025)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 104.09 medium kapton step  = 0.00253925 edep = 0.51102
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 217.854 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.189568, -0.834105, -85.1)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 103.579 medium CF4 step  = 3.19972 edep = 1.44747
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.504 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.160031, -0.800035, -81.9006)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 102.132 medium Steel step  = 0.00059906 edep = 0.460667
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.505 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.160025, -0.800029, -81.9)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_1/gasStrip_MWPC1_14
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 101.671 medium CF4 step  = 0.00275281 edep = 0.0012099
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.505 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.16, -0.799999, -81.8972)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_1/gasStrip_MWPC1_15
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 101.67 medium CF4 step  = 0.597305 edep = 0.275373
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.627 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.154486, -0.793639, -81.3)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 101.395 medium Steel step  = 0.00059906 edep = 0.441093
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.627 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.154481, -0.793633, -81.2994)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 100.954 medium CF4 step  = 0.598858 edep = 0.277633
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.75 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.148952, -0.787256, -80.7006)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 100.676 medium Steel step  = 0.00059906 edep = 0.465521
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.75 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.148947, -0.78725, -80.7)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_2/gasStrip_MWPC1_13
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 100.21 medium CF4 step  = 0.600059 edep = 0.266505
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.874 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.143407, -0.78086, -80.1)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1/gasPlane_MWPC1_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 99.9439 medium Steel step  = 0.00059906 edep = 0.445756
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 218.874 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.143402, -0.780854, -80.0994)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1/MWPCVol_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 99.4981 medium CF4 step  = 3.19972 edep = 1.49365
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 219.538 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.113865, -0.746784, -76.9)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC1_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 98.0045 medium kapton step  = 0.00253925 edep = 0.53633
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 219.538 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (0.113841, -0.746757, -76.8975)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 97.4682 medium vacuum step  = 45.2994 edep = 1.6475e-21
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 228.991 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.30433, -0.264411, -31.6025)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 97.4682 medium kapton step  = 0.00253925 edep = 0.538695
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 228.991 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.304353, -0.264384, -31.6)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 96.9295 medium CF4 step  = 3.19972 edep = 1.52444
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 229.664 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.33389, -0.230314, -28.4006)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1/gasPlane_MWPC2_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 95.405 medium Steel step  = 0.00059906 edep = 0.460246
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 229.664 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.333896, -0.230307, -28.4)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1/gasPlane_MWPC2_1/gasStrip_MWPC2_19
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 94.9448 medium CF4 step  = 0.600059 edep = 0.278085
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 229.791 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.339435, -0.223918, -27.8)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1/gasPlane_MWPC2_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 94.6667 medium Steel step  = 0.00059906 edep = 0.462832
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 229.791 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.339441, -0.223912, -27.7994)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 94.2039 medium CF4 step  = 0.598858 edep = 0.279246
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 229.918 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.344969, -0.217535, -27.2006)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1/gasPlane_MWPC2_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 93.9246 medium Steel step  = 0.00059906 edep = 0.465464
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 229.918 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.344975, -0.217529, -27.2)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1/gasPlane_MWPC2_2/gasStrip_MWPC2_16
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 93.4592 medium CF4 step  = 0.600059 edep = 0.281558
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 230.046 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.350514, -0.211139, -26.6)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1/gasPlane_MWPC2_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 93.1776 medium Steel step  = 0.00059906 edep = 0.468264
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 230.046 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.350519, -0.211133, -26.5994)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2/MWPCVol_MWPC2_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 92.7093 medium CF4 step  = 3.19972 edep = 1.50351
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 230.733 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.380057, -0.177062, -23.4)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/beamdet_0/MWPC_MWPC2_2
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 91.2058 medium kapton step  = 0.00253925 edep = 0.541131
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 230.734 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.38008, -0.177035, -23.3975)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 90.6647 medium vacuum step  = 23.0435 edep = 8.91216e-22
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 235.716 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.592801, 0.0683301, -0.35627)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/target_0/mylarWin_0
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 90.6647 medium mylar step  = 0.000353537 edep = 0.0756921
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 235.716 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.592804, 0.0683339, -0.355915)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/target_0/steelWin_0
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 90.589 medium Steel step  = 0.000606779 edep = 0.485357
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 235.716 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] track position (-0.59281, 0.0683404, -0.355307)
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] path  = /cave_1/target_0/shapeD2_0
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Kinetic Energy  = 90.1037 medium D2 step  = 0.354752 edep = 0.135845
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Current time = 235.793 ns 
+[DEBUG  ] [ERBeamDet][CalcEkinAndTimeOnTarget] Sum Eloss = 17.7759
+[DEBUG  ] [ERBeamDetPID] Target State::  px: -10.7435; py: 12.3922; pz: 1163.7 energy: 7572.51
+[DEBUG  ] [ERBeamDetPID]---------------------Finished----------------------------------------
+[DEBUG  ] [ERTelescopePID]------------Started-----------------------------------------------
+[DEBUG  ] [ERTelescopePID] Work with traсks in Telescope_1_DoubleSi_DSD1_XY
+[DEBUG  ] [FindBackPropagationStartPoint] Last sensetive volume for track /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_CsI_0/CsIBoxShell_3/SensitiveCsIBox_1
+[DEBUG  ] [FindBackPropagationStartPoint] Back propagation start point (-3.313,2.59914,37.288)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Energy deposites calculation for particle He3; start point = (-3.313,2.59914,37.288; and direction = 0.0725763,-0.06752,-0.995075
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-3.313, 2.59914, 37.288)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_CsI_0/CsIBoxShell_3
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Calc energy deposite for range 1e-06 in material CsI with kinetic energy 0
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Current kinetic Energy  = 0
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-3.313, 2.59914, 37.288)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_CsI_0/CsIBoxShell_3/SensitiveCsIBox_1
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Finding digis...
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Digi branch substring Central_telescope_CsI
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Finding digi with channel number 3 in branch TelescopeDigi_Central_telescope_CsI
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites]  Collection has digi with channel 3 and edep 47.6819
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Found digi with edep 47.6819
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Current kinetic Energy  = 47.6819
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-2.97852, 2.28796, 32.702)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_CsI_0/CsIBoxShell_3
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Calc energy deposite for range 0.0020089 in material CsI with kinetic energy 47.6819
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Current kinetic Energy  = 48.2613
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-2.97837, 2.28782, 32.7)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Calc energy deposite for range 0.326608 in material vacuum with kinetic energy 48.2613
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Current kinetic Energy  = 48.2613
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-2.95467, 2.26577, 32.375)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_DoubleSi_DSD_CT2_XY_0
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Calc energy deposite for range 3.41732e-05 in material silicon with kinetic energy 48.2613
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Current kinetic Energy  = 48.2688
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-2.95467, 2.26577, 32.375)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_DoubleSi_DSD_CT2_XY_0/doubleSiStrip_XY_30/SensitiveDoubleSiBox_XY_4
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Finding digis...
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Digi branch substring Central_telescope_DoubleSi_DSD_CT2_XY
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Finding digi with channel number 30 in branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_X
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites]  Collection has digi with channel 30 and edep 7.93789
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Found digi with edep 7.93789
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Finding digi with channel number 4 in branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites]  Collection has digi with channel 5 and edep 7.96513
+[ERROR  ]    [ERTelescopePID][CalcEnergyDeposites] Digi with channel number 4 not found in collection TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[01;31m[FATAL  ] [11.07.2024 15:04:15] [ERTelescopePID.cxx::ApplyEdepAccountingStrategy:520] [ERTelescopePID][ApplyEdepAccountingStrategy] Unable to apply edep accounting strategy.[0m
+[01;31m[FATAL  ] [11.07.2024 15:04:15] We stop the execution of the process at this point.
+[01;31m[FATAL  ] [11.07.2024 15:04:15] For later analysis we write a core dump to core_dump_2331 
+[0m
+[01;32m[DEBUG  ] [11.07.2024 15:04:16] [FairRootManager.cxx::~FairRootManager:127] Enter Destructor of FairRootManager[0m
+[01;32m[DEBUG  ] [11.07.2024 15:04:16] [FairRootManager.cxx::~FairRootManager:138] Leave Destructor of FairRootManager[0m
+WARNING - Attempt to delete the physical volume store while geometry closed !
+WARNING - Attempt to delete the logical volume store while geometry closed !
+WARNING - Attempt to delete the solid store while geometry closed !
+WARNING - Attempt to delete the region store while geometry closed !

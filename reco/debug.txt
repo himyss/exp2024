@@ -1,0 +1,12 @@
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] Current kinetic Energy  = 48.2688
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] track position (-2.95467, 2.26577, 32.375)
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites] path  = /cave_1/QTelescopeTmp_0/Central_telescope_1/Central_telescope_DoubleSi_DSD_CT2_XY_0/doubleSiStrip_XY_30/SensitiveDoubleSiBox_XY_4
+[DEBUG  ] [ERTelescopePID] [CalcEnergyDeposites]  Finding digis...
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Digi branch substring Central_telescope_DoubleSi_DSD_CT2_XY
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Finding digi with channel number 30 in branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_X
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites]  Collection has digi with channel 30 and edep 7.93789
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Found digi with edep 7.93789
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites] Finding digi with channel number 4 in branch TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[DEBUG  ]    [ERTelescopePID][CalcEnergyDeposites]  Collection has digi with channel 5 and edep 7.96513
+[ERROR  ]    [ERTelescopePID][CalcEnergyDeposites] Digi with channel number 4 not found in collection TelescopeDigi_Central_telescope_DoubleSi_DSD_CT2_XY_Y
+[01;31m[FATAL  ] [11.07.2024 15:04:15] [ERTelescopePID.cxx::ApplyEdepAccountingStrategy:520] [
