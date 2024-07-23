@@ -23,7 +23,7 @@ void postReco() {
   TString inFileCleaned = "/mnt/data/exp2024/sim/sim_digi.root";
   TChain *chCleaned = new TChain("er");
   chCleaned->Add(inFileCleaned.Data());
-  cout << chCleaned->GetEntries() << endl;	
+  cout << chCleaned->GetEntries() << endl;  
 
   chReco->AddFriend(chCleaned);
 
@@ -333,7 +333,7 @@ void postReco() {
 //------------------------------------------------------------------------------------------------
 
   for (Int_t nentry=0;nentry<chReco->GetEntries();nentry++) {
-  // for (Int_t nentry=0;nentry<1000;nentry++) {
+  // for (Int_t nentry=0;nentry<10;nentry++) {
     if (nentry%100000==0) cout << nentry << endl;
 
     zeroVars();
@@ -585,7 +585,6 @@ void postReco() {
       Int_t tmpCh = ((ERDigi*)v_DSD_CT2_Y->At(i))->Channel();
       DSD2_Y_C[tmpCh] = ((ERDigi*)v_DSD_CT2_Y->At(i))->Edep();     
     }
-  
     if (v_CsI->GetEntries()==1) {
       nCsI = ((ERDigi*)v_CsI->At(0))->Channel();
       aCsI = ((ERDigi*)v_CsI->At(0))->Edep();

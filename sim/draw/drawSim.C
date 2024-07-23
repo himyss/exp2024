@@ -5,6 +5,7 @@ void drawSim() {
 	ch->Add("/mnt/data/exp2024/sim/sim_digi.root");
 	ch->Add("/mnt/data/exp2024/sim/sim_digi2.root");
 
+
 	TCanvas *c1 = new TCanvas("c1","title",1800,1000);
 	c1->Divide(4,3);
 

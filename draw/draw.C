@@ -15,28 +15,28 @@ void draw() {
 	ch->SetMarkerStyle(6);
 
 	Bool_t beam = 0;
-	Bool_t sideID = 1;
+	Bool_t sideID = 0;
 	Bool_t sideID_single = 0;
-	Bool_t cent_ID_single = 0;
+	Bool_t cent_ID_single = 1;
 
 	if (beam) {
 		TCanvas *c1 = new TCanvas("c1","title",1000,1000);
 		c1->Divide(2,2);
 
 		c1->cd(1);
-		ch->Draw("F5+F3:tF5-tF3","","colz");
+		ch->Draw("F5+F3:tF5-tF3","lv_he8.T()-lv_he8.Mag()>0","colz");
 		c1->Update();
 
 		c1->cd(2);
-		ch->Draw("fYt:fXt","","colz");
+		ch->Draw("fYt:fXt","fYt>-100","colz");
 		c1->Update();
 
 		c1->cd(3);
-		ch->Draw("lv_he8.Theta()*TMath::RadToDeg()","","");
+		ch->Draw("lv_he8.Theta()*TMath::RadToDeg()","lv_he8.T()-lv_he8.Mag()>0","");
 		c1->Update();	
 
 		c1->cd(4);
-		ch->Draw("lv_he8.T()-lv_he8.Mag() >> beamE(100,175,225)","","");
+		ch->Draw("lv_he8.T()-lv_he8.Mag() >> beamE(100,165,225)","","");
 		c1->Update();
 	}
 

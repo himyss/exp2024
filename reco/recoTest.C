@@ -1,12 +1,11 @@
-void reco2() {
+void recoTest() {
   //---------------------Files-----------------------------------------------
-
-  TString geoFile = "/mnt/data/exp2024/sim/setup2.root";
+  TString geoFile = "/home/ivan/work/data/exp2024/sim/setupTest.root";
   // -----   Timer   --------------------------------------------------------
   TStopwatch timer;
   timer.Start();
-  TString inFile = "/mnt/data/exp2024/sim/sim_digi2.root";
-
+  TString inFile = "/home/ivan/work/data/exp2024/sim/sim_digiTest.root";
+  TString outFile = "/home/ivan/work/data/exp2024/reco/recoTest.root";
   TFile *f_in = new TFile(inFile.Data());
   if (f_in->IsZombie()) {
     cerr << "File " << inFile.Data() << " does not exist" << endl;
@@ -25,10 +24,6 @@ void reco2() {
   //run->HoldEventsCount(); //forbid different entry number in the input and output file
   run->SetGeomFile(geoFile);
   run->SetInputFile(inFile);
-
-  TString outFile = "/mnt/data/exp2024/reco/reco2.root";
-
-
   run->SetOutputFile(outFile);
   // ------------------------------------------------------------------------
   //-------- Set MC event header --------------------------------------------
@@ -45,7 +40,7 @@ void reco2() {
   qtelescopeTrackFinder->SetHitStation("Telescope_2", "Telescope_2_DoubleSi_DSD2_YX");
   qtelescopeTrackFinder->SetHitStation("Telescope_3", "Telescope_3_DoubleSi_DSD3_XY");
   qtelescopeTrackFinder->SetHitStation("Telescope_4", "Telescope_4_DoubleSi_DSD4_YX");
-  qtelescopeTrackFinder->SetHitStation("Central_telescope", "Central_telescope_DoubleSi_DSD_CT2_XY");
+  qtelescopeTrackFinder->SetHitStation("Central_telescope", "Central_telescope_DoubleSi_DSD_CT1_YX");
   run->AddTask(qtelescopeTrackFinder);
   // -----------------------BeamDetTrackPID------------------------------------
   Int_t Z = 2, A = 8, Q = 2;
@@ -58,6 +53,9 @@ void reco2() {
   run->AddTask(beamdetPid);
   // ------   QTelescope TrackPID -----------------------------------------
   ERTelescopePID* qtelescopePID = new ERTelescopePID(verbose);
+  Double_t normalizedThickness = 0.002; // [cm]
+  Double_t DSD_thickness = 0.15; // [cm]
+
   qtelescopePID->SetParticle("Telescope_1_DoubleSi_DSD1_XY", 1000020030, "SSD20_1", "SSD50_1", 0.002, {}, {"SSD20_1"});
   qtelescopePID->SetParticle("Telescope_1_DoubleSi_DSD1_XY", 1000010030, "SSD20_1", "SSD50_1", 0.002, {}, {"SSD20_1"});
   qtelescopePID->SetParticle("Telescope_1_DoubleSi_DSD1_XY", 1000020040, "SSD20_1", "SSD50_1", 0.002, {}, {"SSD20_1"});
@@ -93,8 +91,11 @@ void reco2() {
   qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000010030, "DSD_CT2", "CsI", 0.15);
   qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000020040, "DSD_CT2", "CsI", 0.15);
   qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000030060, "DSD_CT2", "CsI", 0.15);
-  // qtelescopePID->SetEdepAccountingStrategy("DSD_CT1", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
-  qtelescopePID->SetEdepAccountingStrategy("DSD_CT2", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
+
+  qtelescopePID->SetEdepAccountingStrategy("DSD_CT2", ERTelescopePID::EdepAccountingStrategy::EdepFromYChannel);
+  // qtelescopePID->SetEdepAccountingStrategy("DSD_CT2", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
+  // qtelescopePID->SetEdepAccountingStrategy("DSD_CT1", ERTelescopePID::EdepAccountingStrategy::EdepFromYChannel);
+
   run->AddTask(qtelescopePID);
   // ------------------------------------------------------------------------;
   ERNDTrackFinder* nd_track_finder = new ERNDTrackFinder();
@@ -106,7 +107,7 @@ void reco2() {
   // -----   Intialise and run   --------------------------------------------
   FairLogger::GetLogger()->SetLogScreenLevel("FATAL");
   run->Init();
-  run->Run(0, nEvents);
+  run->Run(1017, 1018);
   // ------------------------------------------------------------------------;
   //rtdb->setOutput(parIO);
   //rtdb->saveOutput();

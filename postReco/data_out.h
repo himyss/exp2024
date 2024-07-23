@@ -1,10 +1,10 @@
 // BEAM
 //------------------------------------------------------------------------------------------------
 Float_t fXt,fYt;
+
 Float_t targetTime;
 Float_t tF5,tF3,F3,F5;
 
-//------------------------------------------------------------------------------------------------
 
 Int_t flag1,flag2,flag3,flag4;
 Int_t nh3_1,nh3_2,nh3_3,nh3_4;
@@ -49,14 +49,10 @@ Int_t multCsI;
 
 //------------------------------------------------------------------------------------------------
 // Neutron
-
-
-
 Float_t ND_time[32],ND_amp[32],ND_tac[32];
 Float_t ND_energy[32],ND_energy_CMH6[32],ND_energy_CMH7[32],ND_energy_CMHe7[32],ND_energy_CM4n[32],ND_energy_CMHe7_side[32],ND_energy_CM3n[32],ND_energy_CMH5[32],ND_energy_CMH4_cent[32];
 
-Int_t neutron,gammma;
-Int_t neutrons;
+
 //------------------------------------------------------------------------------------------------
 // out TLorentzVector's
 
@@ -64,4 +60,55 @@ TLorentzVector lv_he8, lv_n, lv_h7, lv_h6, lv_4n;
 TLorentzVector lv_he3_side, lv_h3_side, lv_he4_side, lv_6li_side;
 TLorentzVector lv_h3_cent, lv_he3_cent, lv_he4_cent, lv_6li_cent;
 TLorentzVector lv_h3_CMH7, lv_h7_CMR, lv_h3_CMH6, lv_h6_CMR, lv_n_CMH7, lv_n_CMH6, lv_4n_CMR, lv_n_CM4n;
+
+
+TLorentzVector lv_he3_li6;
+TLorentzVector lv_he7_side,lv_he7_side_CMR,lv_he4_CMHe7_side;
+TLorentzVector lv_he5_inv,lv_he5_inv_CMR,lv_h5_cent_mm,lv_h3_CMH5_cent;
+
+TLorentzVector lv_h4_cent,lv_h4_cent_CMR,lv_h3_CMH4;
+TLorentzVector lv_h4_inv_cent_CMR,lv_he6_side_mm,lv_h4_inv_cent;
+
+//------------------------------------------------------------------------------------------------
+// out Angles
+Float_t angle_h7_beam,angle_he5_beam;
+
+//------------------------------------------------------------------------------------------------
+
+//Float_t targetTime,diafTime;
+
+// out TLorentzVector's
+// TLorentzVector lv_h7,lv_he3;
+// TLorentzVector lv_h3_CMH7,lv_h7_CMR,lv_he8_CMR;
+
+// TLorentzVector lv_he4,lv_h6;
+// TLorentzVector lv_h3_CMH6,lv_h6_CMR,lv_he4_CMH6,lv_he8_CMH6;
+// TLorentzVector lv_h3_CMH6_rot,lv_h3_CMH7_rot;
+
+// TLorentzVector lv_he7,lv_he7_CMR,lv_he4_CMHe7,lv_neutron_CMHe7,lv_neutron_CMHe5,lv_neutron_CMH5,lv_neutron_CMR;
+
+// TLorentzVector lv_neutron,lv_neutron_CMH6;
+
+// TLorentzVector lv_h6qFrame, lv_h3qFrame;
+
+// TLorentzVector lv_he5,lv_he5_CMR,lv_he4_rot,lv_he5_rot,lv_he4_CMHe5_rot;
+// TLorentzVector lv_h5, lv_h3_CMH5, lv_h3qFrame_5h,lv_h3_CMH5_rot;
+
+// TLorentzVector lv_h4, lv_he6_side, lv_neutron_CMHe6, lv_h4_CMR, lv_he4_CMHe6;
+// //------------------------------------------------------------------------------------------------
+// // Neutron
+// // Float_t aND,tacND,tND,tND_cal,ND_time_cal[32],ND_energy[32],eNeutron;
+// // Int_t neutron,gammma;
+
+// //------------------------------------------------------------------------------------------------
+// // h7
+// Float_t angle_he3_h7,angle_h3_h7,angle_he3_he8,angle_h7_he8;
+
+// //h6
+// Float_t angle_he4_h6,angle_he4_he8,angle_h3_he8,angle_h3_he8_CMH6;
+// Float_t angle_h3_h6;
+// Float_t angle_h3_beam_CMH6,angle_h3_q_CMH6;
+// Float_t angle_h7_beam_CMR, angle_h6_beam_CMR;
+
+
 

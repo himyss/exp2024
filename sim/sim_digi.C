@@ -57,7 +57,6 @@ void sim_digi(Int_t events_count = 50000) {
   setupBeamDet->AddToF("ToF2", BeamDetPosZToF);    //  BeamDet parts should be added in ascending order   
   setupBeamDet->AddMWPC("MWPC1", BeamDetPosZ1MWPC);   //  of Z-coordinate of part.
   setupBeamDet->SetMWPCnumberingInvOrderX(); 
-
   setupBeamDet->AddMWPC("MWPC2", BeamDetPosZ2MWPC);    
   setupBeamDet->SetMWPCnumberingInvOrderX(); 
 

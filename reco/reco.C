@@ -5,6 +5,7 @@ void reco() {
   TStopwatch timer;
   timer.Start();
   TString inFile = "/mnt/data/exp2024/sim/sim_digi.root";
+
   TFile *f_in = new TFile(inFile.Data());
   if (f_in->IsZombie()) {
     cerr << "File " << inFile.Data() << " does not exist" << endl;
@@ -23,7 +24,9 @@ void reco() {
   //run->HoldEventsCount(); //forbid different entry number in the input and output file
   run->SetGeomFile(geoFile);
   run->SetInputFile(inFile);
+
   TString outFile = "/mnt/data/exp2024/reco/reco.root";
+
   run->SetOutputFile(outFile);
   // ------------------------------------------------------------------------
   //-------- Set MC event header --------------------------------------------
@@ -47,7 +50,6 @@ void reco() {
   TString ionName = "8He";
   ERBeamDetPID* beamdetPid = new ERBeamDetPID(verbose);
   beamdetPid->SetBoxPID(0., 1000., 0., 1000.);
-  // beamdetPid->SetOffsetToF(68.275);
   beamdetPid->SetProbabilityThreshold(0);
   beamdetPid->SetIonMass(7482.5396);
   beamdetPid->SetPID(1000020080);

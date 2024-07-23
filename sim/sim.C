@@ -1,7 +1,5 @@
+void sim(Int_t events_count = 10000) {
 
-void sim(Int_t events_count = 1) {
-
-  Double_t CentTelzOffset = 0.;
 //----------------------------------
   Double_t BeamDetLToF = 1232.0;     // [cm] 12348
   Double_t BeamDetPosZToF = -95.3;  // [cm] 
@@ -56,8 +54,6 @@ void sim(Int_t events_count = 1) {
   setupBeamDet->AddToF("ToF1", BeamDetPosZToF - BeamDetLToF);     
   setupBeamDet->AddToF("ToF2", BeamDetPosZToF);    //  BeamDet parts should be added in ascending order   
   setupBeamDet->AddMWPC("MWPC1", BeamDetPosZ1MWPC);   //  of Z-coordinate of part.
-  setupBeamDet->SetMWPCnumberingInvOrderX(); 
-
   setupBeamDet->AddMWPC("MWPC2", BeamDetPosZ2MWPC);    
   setupBeamDet->SetMWPCnumberingInvOrderX(); 
 
@@ -86,14 +82,15 @@ void sim(Int_t events_count = 1) {
   TVector3 fZeroRotation(0., 0., 0.);
   TVector3 fMyRotation(0., 0., 0.);
 
-  ERGeoSubAssembly* assembly_1 = new ERGeoSubAssembly("Telescope_1", TVector3(-x, y, z), fMyRotation);
-  ERQTelescopeGeoComponentSingleSi* thin1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_1",
-                                                                                   TVector3(0.22, -0.27, -1.5), TVector3(), "X"); 
-  ERQTelescopeGeoComponentSingleSi* thick1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_1", 
-                                                                                  TVector3(0., 0., 0.), TVector3(), "Y");
+
+  ERQTelescopeGeoComponentSingleSi* thin1_1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_1",
+                                                                                   TVector3(0.22, -0.27, -0.5), TVector3(), "Y");   
+  ERQTelescopeGeoComponentDoubleSi* thick1 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD1", 
+                                                                                  TVector3(0., 0., 1.), TVector3(), "X");
   ERQTelescopeGeoComponentSingleSi* veto1 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_1", 
-                                                                                  TVector3(0., 0., 1.0), TVector3(), "Y");
+                                                                                  TVector3(0., 0., 2.0), TVector3(), "Y");
   assembly_1->AddComponent(thin1);
+  assembly_1->AddComponent(thin1_1);  
   assembly_1->AddComponent(thick1);
   assembly_1->AddComponent(veto1);
 
@@ -103,12 +100,15 @@ void sim(Int_t events_count = 1) {
   ERGeoSubAssembly* assembly_2 = new ERGeoSubAssembly("Telescope_2", TVector3(-y, -x, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_2",
                                                                                    TVector3(0.27, 0.22, -1.5), TVector3(), "Y");
-  ERQTelescopeGeoComponentSingleSi* thick2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_2", 
-                                                                                  TVector3(0., 0., 0.), TVector3(), "X");
+  ERQTelescopeGeoComponentSingleSi* thin2_2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_2",
+                                                                                   TVector3(0.22, -0.27, -0.5), TVector3(), "X");    
+  ERQTelescopeGeoComponentDoubleSi* thick2 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD2", 
+                                                                                  TVector3(0., 0., 1.), TVector3(), "Y");
   ERQTelescopeGeoComponentSingleSi* veto2 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_2", 
-                                                                                  TVector3(0., 0., 1.0), TVector3(), "X");
+                                                                                  TVector3(0., 0., 2.0), TVector3(), "X");
 
   assembly_2->AddComponent(thin2);
+  assembly_2->AddComponent(thin2_2);
   assembly_2->AddComponent(thick2);
   assembly_2->AddComponent(veto2);
 
@@ -123,9 +123,13 @@ void sim(Int_t events_count = 1) {
   zPos = radius * TMath::Cos(rotationC.Y() * TMath::DegToRad());
   ERGeoSubAssembly* assembly_Central= new ERGeoSubAssembly("Central_telescope", TVector3(xPos, yPos, zPos), rotationC);
   
-  ERQTelescopeGeoComponentDoubleSi* thick_Central = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD", 
+  ERQTelescopeGeoComponentDoubleSi* thin_Central = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD_CT1", 
+                                                                                  TVector3(0., 0., -5.), TVector3(), "Y");
+  ERQTelescopeGeoComponentDoubleSi* thick_Central = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD_CT2", 
                                                                                   TVector3(0., 0., -2.9), TVector3(), "X");
   ERQTelescopeGeoComponentCsI* csi = new ERQTelescopeGeoComponentCsI("CsI", "CsI", TVector3(0., 0., 0.), TVector3());
+
+  assembly_Central->AddComponent(thin_Central);
 
   assembly_Central->AddComponent(thick_Central);
   assembly_Central->AddComponent(csi);
@@ -136,12 +140,15 @@ void sim(Int_t events_count = 1) {
   ERGeoSubAssembly* assembly_3 = new ERGeoSubAssembly("Telescope_3", TVector3(x, -y, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_3",
                                                                                    TVector3(-0.22, 0.27, -1.5), TVector3(), "X"); 
-  ERQTelescopeGeoComponentSingleSi* thick3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_3", 
-                                                                                  TVector3(0., 0., 0.), TVector3(), "Y");
+  ERQTelescopeGeoComponentSingleSi* thin3_3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_3",
+                                                                                   TVector3(-0.22, 0.27, -0.5), TVector3(), "Y");   
+  ERQTelescopeGeoComponentDoubleSi* thick3 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD3", 
+                                                                                  TVector3(0., 0., 1.), TVector3(), "X");
   ERQTelescopeGeoComponentSingleSi* veto3 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_3", 
-                                                                                  TVector3(0., 0., 1.0), TVector3(), "Y");
+                                                                                  TVector3(0., 0., 2.0), TVector3(), "Y");
 
   assembly_3->AddComponent(thin3);
+  assembly_3->AddComponent(thin3_3);  
   assembly_3->AddComponent(thick3);
   assembly_3->AddComponent(veto3);
 
@@ -151,12 +158,15 @@ void sim(Int_t events_count = 1) {
   ERGeoSubAssembly* assembly_4 = new ERGeoSubAssembly("Telescope_4", TVector3(y, x, z), fMyRotation);
   ERQTelescopeGeoComponentSingleSi* thin4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD20_4",
                                                                                    TVector3(-0.27, -0.22, -1.5), TVector3(), "Y"); 
-  ERQTelescopeGeoComponentSingleSi* thick4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_4", 
-                                                                                  TVector3(0., 0., 0.), TVector3(), "X");
+  ERQTelescopeGeoComponentSingleSi* thin4_4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD50_4",
+                                                                                   TVector3(-0.27, -0.22, -0.5), TVector3(), "X");   
+  ERQTelescopeGeoComponentDoubleSi* thick4 = new ERQTelescopeGeoComponentDoubleSi("DoubleSi", "DoubleSi_DSD4", 
+                                                                                  TVector3(0., 0., 1.), TVector3(), "Y");
   ERQTelescopeGeoComponentSingleSi* veto4 = new ERQTelescopeGeoComponentSingleSi("SingleSi", "SingleSi_SSD_V_4", 
-                                                                                  TVector3(0., 0., 1.0), TVector3(), "X");
+                                                                                  TVector3(0., 0., 2.0), TVector3(), "X");
 
   assembly_4->AddComponent(thin4);
+  assembly_4->AddComponent(thin4_4);  
   assembly_4->AddComponent(thick4);
   assembly_4->AddComponent(veto4);
 
@@ -181,7 +191,7 @@ void sim(Int_t events_count = 1) {
   TString ionName = "8He";
   ERIonMixGenerator* generator = new ERIonMixGenerator(ionName, Z, A, Q, 1);
   Double32_t kin_energy = kinE_MevPerNucleon * 1e-3 * A; //GeV
- generator->SetKinE(kin_energy);
+  generator->SetKinE(kin_energy);
   generator->SetPSigmaOverP(0.017);
   generator->SetThetaSigma(0.75, 0.4);
   generator->SetPhiRange(0, 360);
@@ -191,22 +201,24 @@ void sim(Int_t events_count = 1) {
   primGen->AddGenerator(generator);
   run->SetGenerator(primGen);
 
-/////////////////////////////////////////////////////////////////////////////
   // ------- Decayer --------------------------------------------------------
-  
+
   Double_t massH7 = 4*0.939565 + 2.808920;//7.5061760;  // [GeV]
   ERDecayer* decayer = new ERDecayer();
   ERDecayEXP1811* targetDecay = new ERDecayEXP1811();
   targetDecay->SetInteractionVolumeName("shapeD2");
   targetDecay->SetNuclearInteractionLength(63.);
-  //targetDecay->SetAngularDistribution("cos_tetta_cross.txt");
+
+
   targetDecay->SetH7Mass(massH7);
-  //targetDecay->SetDecayFile("pmom-pv-1_short.dat", 0.0005 /*excitation in file [GeV]*/);
+
   targetDecay->SetH7Exitation(0.0022, 0.00001, 0.3);
   targetDecay->SetH7Exitation(0.0065, 0.00001, 0.7);
   targetDecay->SetMinStep(1e-4);
   targetDecay->SetMaxPathLength(0.63/*2e-4 * 10 * 1.1*/);
+
   // targetDecay->SetMaxPathLength(6./*2e-4 * 10 * 1.1*/);
+
 
   decayer->AddDecay(targetDecay);
   run->SetDecayer(decayer);

@@ -1,10 +1,12 @@
 void reco1() {
   //---------------------Files-----------------------------------------------
+
   TString geoFile = "/mnt/data/exp2024/sim/setup1.root";
   // -----   Timer   --------------------------------------------------------
   TStopwatch timer;
   timer.Start();
   TString inFile = "/mnt/data/exp2024/sim/sim_digi1.root";
+
   TFile *f_in = new TFile(inFile.Data());
   if (f_in->IsZombie()) {
     cerr << "File " << inFile.Data() << " does not exist" << endl;
@@ -23,7 +25,10 @@ void reco1() {
   //run->HoldEventsCount(); //forbid different entry number in the input and output file
   run->SetGeomFile(geoFile);
   run->SetInputFile(inFile);
+
   TString outFile = "/mnt/data/exp2024/reco/reco1.root";
+
+
   run->SetOutputFile(outFile);
   // ------------------------------------------------------------------------
   //-------- Set MC event header --------------------------------------------
@@ -47,7 +52,6 @@ void reco1() {
   TString ionName = "8He";
   ERBeamDetPID* beamdetPid = new ERBeamDetPID(verbose);
   beamdetPid->SetBoxPID(0., 1000., 0., 1000.);
-  // beamdetPid->SetOffsetToF(68.275);
   beamdetPid->SetProbabilityThreshold(0);
   beamdetPid->SetIonMass(7482.5396);
   beamdetPid->SetPID(1000020080);
@@ -79,11 +83,17 @@ void reco1() {
   qtelescopePID->SetEdepAccountingStrategy("DSD3", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
   qtelescopePID->SetEdepAccountingStrategy("DSD4", ERTelescopePID::EdepAccountingStrategy::EdepFromYChannel);
 
-  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000010030, "DSD_CT2", "CsI", 0.03);
-  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000020030, "DSD_CT2", "CsI", 0.03);
-  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000020040, "DSD_CT2", "CsI", 0.03);
-  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000030060, "DSD_CT2", "CsI", 0.03);
-  // qtelescopePID->SetEdepAccountingStrategy("DSD_CT1", ERTelescopePID::EdepAccountingStrategy::EdepFromYChannel);
+  // qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_YX", 1000020030, "DSD_CT1", "DSD_CT2", 0.03);
+  // qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_YX", 1000020030, "DSD_CT1", "DSD_CT2", 0.03);
+  // qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_YX", 1000020030, "DSD_CT1", "DSD_CT2", 0.03);
+  // qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_YX", 1000020030, "DSD_CT1", "DSD_CT2", 0.03);
+  // qtelescopePID->SetEdepAccountingStrategy("DSD_CT1", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
+
+  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000020030, "DSD_CT2", "CsI", 0.15);
+  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000010030, "DSD_CT2", "CsI", 0.15);
+  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000020040, "DSD_CT2", "CsI", 0.15);
+  qtelescopePID->SetParticle("Central_telescope_DoubleSi_DSD_CT2_XY", 1000030060, "DSD_CT2", "CsI", 0.15);
+  // qtelescopePID->SetEdepAccountingStrategy("DSD_CT1", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
   qtelescopePID->SetEdepAccountingStrategy("DSD_CT2", ERTelescopePID::EdepAccountingStrategy::EdepFromXChannel);
 
   run->AddTask(qtelescopePID);

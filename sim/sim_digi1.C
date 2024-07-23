@@ -1,7 +1,5 @@
 void sim_digi1(Int_t events_count = 50000) {
 
-  // gRandom->SetSeed(100);
-
   Double_t CentTelzOffset = 0.;
 //----------------------------------
   Double_t BeamDetLToF = 1232.0;     // [cm] 12348
@@ -13,6 +11,7 @@ void sim_digi1(Int_t events_count = 50000) {
   // --------------- Target -------------------------------------------------
   Double_t targetD2Thickness = 0.6;  // [cm] this parameter should coincide with target H2 thickness in /macro/geo/create_target_D2_geo.C
   //---------------------Files-----------------------------------------------
+
   TString outFile = "/mnt/data/exp2024/sim/sim_digi1.root";
   TString parFile = "/mnt/data/exp2024/sim/par1.root";
   TString workDirPath = gSystem->Getenv("VMCWORKDIR");
@@ -21,6 +20,7 @@ void sim_digi1(Int_t events_count = 50000) {
   TString targetGeoFileName = "/home/muzalevskii/work/macro/exp2024/sim/geo/target_exp1904.root";
   TString frameGeoFileName = "/home/muzalevskii/work/macro/exp2024/sim/geo/housingFrames.root";  
   TString ndGeoFileName = "/home/muzalevskii/work/macro/exp2024/sim/geo/ND.geo.exp1904.root";
+
   
   // -----   Timer   --------------------------------------------------------
   TStopwatch timer; 
@@ -277,6 +277,7 @@ void sim_digi1(Int_t events_count = 50000) {
   rtdb->print();
 
   TString geometryName = "/mnt/data/exp2024/sim/setup1.root";
+
   run->CreateGeometryFile(geometryName.Data());
 
   // -----   Run simulation  ------------------------------------------------
